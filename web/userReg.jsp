@@ -22,7 +22,7 @@
         return;
     }
     //查询userTable表中的记录
-    String sql = "INSERT INTO `userTable` VALUES ('" + usr + "', '" + pwd + "', '" + type + "');";
+    String sql = "INSERT INTO `userTable` (username,password,userType) VALUES ('" + usr + "', '" + pwd + "', '" + type + "');";
     System.out.println("数据库语句" + sql);
     int result = SqlSrvDB.executeInsert(sql);    //取得结果集
     SqlSrvDB.closeStmt();                    //关闭语句

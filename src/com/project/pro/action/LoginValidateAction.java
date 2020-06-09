@@ -19,13 +19,9 @@ public class LoginValidateAction extends ActionSupport {
      * @return
      */
     public String execute() {
-
-
         String usr = user.getUsername();
         String pwd = user.getPassword();
         String urt = user.getUserType();
-
-
         boolean validated = false;
 
         ActionContext context = ActionContext.getContext();
@@ -35,30 +31,22 @@ public class LoginValidateAction extends ActionSupport {
         //HttpSession session = request.getSession();
 
         sessionUser = (UserTable) session.get("user");
-
         if (sessionUser == null) {
             String sql = "select * from userTable";
             SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
-            Connection conn = SqlSrvDB.getConn();
-            PreparedStatement pstmt = null;
-
             ResultSet rs = SqlSrvDB.executeQuery(sql);
-
+            System.out.println("[SystemLog]" + sql);
             try {
-                pstmt = conn.prepareStatement(sql);
-
-
+                //pstmt = conn.prepareStatement(sql);
                 while (rs.next()) {
                     if ((rs.getString("username").trim().compareTo(usr) == 0)
                             && (rs.getString("password").compareTo(pwd) == 0)
                             && (rs.getString("userType").compareTo(urt) == 0)) {
-
                         sessionUser = new UserTable();
                         sessionUser.setId(rs.getInt("id"));
                         sessionUser.setUsername(rs.getString("username"));
                         sessionUser.setPassword(rs.getString(3));
                         sessionUser.setUserType(rs.getString(4));
-
 
                         session.put("user", sessionUser);
 
@@ -68,7 +56,7 @@ public class LoginValidateAction extends ActionSupport {
                 }
                 rs.close();
             } catch (SQLException e) {
-
+                System.out.println(e.toString());
             }
             SqlSrvDB.closeStmt();
             SqlSrvDB.closeConn();
