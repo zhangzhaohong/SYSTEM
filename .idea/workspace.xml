@@ -8,8 +8,14 @@
   <component name="ChangeListManager">
     <list default="true" id="481a650c-8dd9-4c4a-bf03-bdca5d572444" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userReg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userReg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +162,7 @@
       <updated>1591721633555</updated>
       <workItem from="1591721634900" duration="4174000" />
       <workItem from="1591726075562" duration="164000" />
-      <workItem from="1591726584710" duration="4157000" />
+      <workItem from="1591726584710" duration="5406000" />
     </task>
     <servers />
   </component>
@@ -214,16 +220,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/userReg.jsp</url>
-          <line>16</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/userReg.jsp</url>
-          <line>20</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/userReg.jsp</url>
           <line>32</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
@@ -233,19 +229,54 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/userReg.jsp</url>
-          <line>24</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/userReg.jsp</url>
-          <line>26</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/userReg.jsp</url>
-          <line>28</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -18,26 +18,21 @@ public class LyMainAction extends ActionSupport {
      */
     public String execute() {
 
-
         int pageSize = 5;
         int totalRec = 0;
         int pageCount = 0;
         int pageNum = 1;
 
-
         ArrayList<LyTable> lyList = new ArrayList<LyTable>();
-
         HttpServletRequest req = ServletActionContext.getRequest();
 
         try {
             SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
             String sql = "select COUNT(*) from lyTable";
-            ResultSet rs = SqlSrvDB.executeQuery(sql);    //ȡ�ý����
-
+            ResultSet rs = SqlSrvDB.executeQuery(sql);
             while (rs.next()) {
                 totalRec = rs.getInt(1);
             }
-
             pageCount = (totalRec % pageSize == 0) ? (totalRec / pageSize) : (totalRec / pageSize + 1);
 
             String pageStr = req.getParameter("page");
@@ -54,11 +49,10 @@ public class LyMainAction extends ActionSupport {
                 tempGet = (totalRec % pageSize == 0) ? pageSize : (totalRec % pageSize);
             }
 
-            //��ѯlyTable���еļ�¼
             // sql = "select * from lyTable";
-            sql = "select * from (select top " + tempGet + " * from(select top " + pageNum * pageSize + " * from lyTable order by id)a order by id desc)b order by id";
+            sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
 
-            rs = SqlSrvDB.executeQuery(sql);    //ȡ�ý����
+            rs = SqlSrvDB.executeQuery(sql);
 
             // int tempint = 1;
 
@@ -102,16 +96,11 @@ public class LyMainAction extends ActionSupport {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
         req.setAttribute("myLyList", lyList);
         req.setAttribute("pageCount", pageCount);
         req.setAttribute("pageNum", pageNum);
-
-
         //RequestDispatcher rd =req.getRequestDispatcher("/main.jsp");
         //rd.forward(req, resp);
-
-
         return SUCCESS;
     }
 }

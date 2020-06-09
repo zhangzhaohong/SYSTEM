@@ -21,20 +21,15 @@ public class RegUserAction extends ActionSupport {
      * @return
      */
     public String execute() {
-
-
         if (user == null) {
             return "error";
         }
-
         String usr = user.getUsername();
         String pwd = user.getPassword();
         String urt = user.getUserType();
-
-        String sql = "insert userTable(username,password,userType) values('" + usr + "','" + pwd + "','" + urt + "')";
+        String sql = "insert userTable (username,password,userType) values('" + usr + "','" + pwd + "','" + urt + "')";
         SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
         int num = SqlSrvDB.executeInsert(sql);
-
         SqlSrvDB.closeStmt();
         SqlSrvDB.closeConn();
         if (num > 0) {
@@ -42,6 +37,5 @@ public class RegUserAction extends ActionSupport {
         } else {
             return ERROR;
         }
-
     }
 }
