@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dataBase">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/Access_JDBC40 .jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/lib/sqljdbc4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

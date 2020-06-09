@@ -12,6 +12,7 @@
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring4:Release" />
           <element id="library" level="project" name="Hibernate 5.4.11-5.4.11" />
           <element id="library" level="project" name="slf4j-api-1.7.30" />
+          <element id="library" level="project" name="struts2" />
         </element>
       </element>
     </root>

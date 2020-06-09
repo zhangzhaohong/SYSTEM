@@ -5,4 +5,34 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
+    <package name="default" extends="struts-default">
+        <action name="loginValidateAction"
+                class="com.project.pro.action.LoginValidateAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">mainAction</param>
+                <param name="supressEmptyParameters">true</param>
+            </result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="mainAction"
+                class="com.project.pro.action.LyMainAction">
+            <result name="success">/main.jsp</result>
+        </action>
+        <action name="addLyAction"
+                class="com.project.pro.action.AddLyAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">mainAction</param>
+            </result>
+            <result name="error">/error.jsp</result>
+            <result name="loginerr" type="dispatcher">
+                /login.jsp
+            </result>
+        </action>
+        <action name="regUserAction"
+                class="com.project.pro.action.RegUserAction">
+            <result name="scuess">/login.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
 </struts>
