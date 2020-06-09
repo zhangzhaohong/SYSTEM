@@ -43,5 +43,7 @@
     <orderEntry type="library" name="slf4j-api-1.7.30" level="project" />
     <orderEntry type="library" name="struts2" level="project" />
     <orderEntry type="library" name="spring" level="project" />
+    <orderEntry type="library" name="database" level="project" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
