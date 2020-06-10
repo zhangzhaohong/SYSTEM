@@ -9,6 +9,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 
+/**
+ * ZHANGZHAOHONG 2018128338
+ * */
 public class LoginValidateAction extends ActionSupport {
 
     private UserTable user;

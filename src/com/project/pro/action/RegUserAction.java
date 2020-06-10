@@ -4,7 +4,9 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.UserTable;
 
-
+/**
+ * ZHANGZHAOHONG 2018128338
+ * */
 public class RegUserAction extends ActionSupport {
 
     private UserTable user;

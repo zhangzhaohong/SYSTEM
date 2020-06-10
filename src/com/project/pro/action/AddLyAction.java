@@ -6,12 +6,12 @@ import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
 import com.project.pro.vo.UserTable;
 
-import java.sql.Connection;
 import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.Map;
 
+/**
+ * ZHANGZHAOHONG 2018128338
+ * */
 public class AddLyAction extends ActionSupport {
     private LyTable ly;
 

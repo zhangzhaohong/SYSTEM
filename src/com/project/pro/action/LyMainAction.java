@@ -11,6 +11,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * ZHANGZHAOHONG 2018128338
+ * */
 public class LyMainAction extends ActionSupport {
 
     /**
