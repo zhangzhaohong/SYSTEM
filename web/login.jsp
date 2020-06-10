@@ -32,7 +32,7 @@
             <tr>
                 <td width="150" align="right">用户级别：</td>
                 <td>
-                    <s:radio list="#{'admin':'管理员','vip':'VIP','guest':'游客' }" name="user.userType" value="'管理员'"></s:radio>
+                    <s:radio list="#{'admin':'管理员','vip':'VIP','guest':'游客' }" name="user.userType" value="'admin'"></s:radio>
                 </td>
             </tr>
             <tr>
