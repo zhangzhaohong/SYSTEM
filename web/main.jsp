@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhangzhaohong
@@ -6,41 +5,45 @@
   Time: 17:02
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" pageEncoding="gb2312" import="com.project.pro.vo.UserTable,java.sql.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Г∙≥Х╗─Ф²©Д©║Ф│╞</title>
+    <title>аТят╟Епео╒</title>
 </head>
 <body>
-<%--
 <c:if test="${sessionScope.user==null}">
     <jsp:forward page="login.jsp"/>
 </c:if>
-${user.username } : ${user.userType},Ф┌╗Е╔╫О╪│Ф╛╒Х©▌Г≥╩Е╫∙Г∙≥Х╗─Ф²©Ц─┌
-<%
-    String usr = (String)session.getAttribute("usr");
-    if (usr == null){
-        response.sendRedirect("login.jsp");
-    } else {
-        out.print(request.getParameter("username") + "О╪▄Ф┌╗Е╔╫О╪│Ф╛╒Х©▌Г≥╩И≥├Г∙≥Х╗─Ф²©Ц─┌");
-    }
-%>
---%>
-<div align="center">
+${user.username } : ${user.userType},дЗ╨цё║╩╤с╜╣гб╪аТят╟Е║ё
+<div>
     <table border="1">
-        <caption>Ф┴─Ф°┴Г∙≥Х╗─Д©║Ф│╞</caption>
+        <caption>кЫспаТятпео╒</caption>
         <tr>
-            <th>Г∙≥Х╗─Д╨╨Е╖⌠Е░█</th><th>Г∙≥Х╗─Ф≈╤И≈╢</th><th>Г∙≥Х╗─Ф═┤И╒≤</th><th>Г∙≥Х╗─Е├┘Е╝╧</th>
+            <th>аТятхкпуцШ</th><th>аТятй╠╪Д</th><th>аТят╠ЙлБ</th><th>аТятдзхщ</th>
         </tr>
+        <c:forEach items="${requestScope.myLyList}" var="ly">
+            <tr>
+                <td>${ly.username }</td>
+                <td>${ly.lydate }</td>
+                <td>${ly.title }</td>
+                <td>${ly.lyContent }</td>
+            </tr>
+        </c:forEach>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colspan="4" style="text-align: right;">
+                <c:if var="jugFir" test="${requestScope.pageNum==1}">йврЁ|иор╩рЁ|</c:if>
+                <c:if test="${!jugFir}"><a href="mainAction.action?page=1">йврЁ</a>|<a href="mainAction.action?page=${requestScope.pageNum-1 }">иор╩рЁ</a>|</c:if>
+
+                <c:if var="jugLast" test="${requestScope.pageNum==requestScope.pageCount||requestScope.pageCount==0}">обр╩рЁ|н╡рЁ</c:if>
+                <c:if test="${!jugLast}">
+                    <a href="mainAction.action?page=${requestScope.pageNum+1 }">обр╩рЁ</a>|<a href="mainAction.action?page=${requestScope.pageCount }">н╡рЁ</a></c:if>
+            </td>
         </tr>
     </table>
 </div>
-<h3>Г≥╩Е╫∙Ф┬░Е┼÷О╪│</h3>
-
+<form action="liuyan.jsp" method="post">
+    <input type="submit" value="аТят">
+</form>
 </body>
 </html>

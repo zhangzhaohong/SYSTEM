@@ -14,23 +14,23 @@
 <body bgcolor="#E3E3E3">
 <% session.removeAttribute("user"); %>
 <div align="center">
-    <s:form action="loginValidateAction" method="post">
-        <table>
+    <s:form action="loginValidateAction" method="post" theme="simple">
+        <table border="1" cellspacing="1" cellpadding="1" align="center">
             <caption>用户登录</caption>
             <tr>
-                <td>用户名：</td>
-                <td>
+                <td width="150" align="right">用户名：</td>
+                <td width="250">
                     <s:textfield name="user.username" size="20"/>
                 </td>
             </tr>
             <tr>
-                <td>密码:</td>
-                <td>
+                <td width="150" align="right">密码:</td>
+                <td width="220">
                     <s:password name="user.password" size="20"/>
                 </td>
             </tr>
             <tr>
-                <td>用户级别：</td>
+                <td width="150" align="right">用户级别：</td>
                 <td>
                     <s:radio list="#{'admin':'管理员','vip':'VIP','guest':'游客' }" name="user.userType" value="'管理员'"></s:radio>
                 </td>

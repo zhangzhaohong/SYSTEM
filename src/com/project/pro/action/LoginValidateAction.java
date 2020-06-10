@@ -5,8 +5,6 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.UserTable;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
