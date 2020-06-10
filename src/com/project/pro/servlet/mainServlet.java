@@ -3,19 +3,18 @@ package com.project.pro.servlet;
 import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
 
+import java.io.IOException;
+import java.sql.*;
+import java.util.ArrayList;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.sql.Date;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 
-@WebServlet(urlPatterns = {"/mainServ"})
+@WebServlet(urlPatterns={"/mainServ"})
 public class mainServlet extends HttpServlet {
 
     @Override
@@ -27,44 +26,45 @@ public class mainServlet extends HttpServlet {
         int pageCount = 0;
         int pageNum = 1;
 
-
         ArrayList<LyTable> lyList = new ArrayList<LyTable>();
 
         try {
             SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
             String sql = "select COUNT(*) from lyTable";
-            ResultSet rs = SqlSrvDB.executeQuery(sql);    //ȡ�ý����
+            ResultSet rs=SqlSrvDB.executeQuery(sql);	//取得结果集
 
-            while (rs.next()) {
+            while(rs.next())
+            {
                 totalRec = rs.getInt(1);
             }
 
-            pageCount = (totalRec % pageSize == 0) ? (totalRec / pageSize) : (totalRec / pageSize + 1);
+            pageCount = (totalRec % pageSize ==0)? (totalRec/pageSize):(totalRec/pageSize+1);
 
             String pageStr = req.getParameter("page");
 
-            pageNum = (pageStr == null) ? 1 : Integer.parseInt(pageStr);
-            if (pageNum == 0) {
+            pageNum = (pageStr==null)?1:Integer.parseInt(pageStr);
+            if(pageNum == 0){
                 pageNum = 1;
             }
 
             int tempGet = 0;
-            if (pageNum < pageCount) {
+            if(pageNum<pageCount){
                 tempGet = pageSize;
-            } else {
-                tempGet = (totalRec % pageSize == 0) ? pageSize : (totalRec % pageSize);
+            }else{
+                tempGet = (totalRec % pageSize==0)?pageSize:(totalRec % pageSize);
             }
 
-            //��ѯlyTable���еļ�¼
+            //查询lyTable表中的记录
             // sql = "select * from lyTable";
-            sql = "select * from (select top " + tempGet + " * from(select top " + pageNum * pageSize + " * from lyTable order by id)a order by id desc)b order by id";
+            sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
 
-            rs = SqlSrvDB.executeQuery(sql);    //ȡ�ý����
+            rs=SqlSrvDB.executeQuery(sql);	//取得结果集
 
             // int tempint = 1;
 
 
-            while (rs.next()) {
+            while(rs.next())
+            {
 //				if(tempint<(pageNum-1)*pageSize+1){
 //					tempint++;
 //					continue;
@@ -75,10 +75,10 @@ public class mainServlet extends HttpServlet {
                 int userid = rs.getInt("userid");
 
                 String username = "";
-                sql = "select username from userTable where id=" + userid;
+                sql = "select username from userTable where id="+userid;
                 ResultSet userRs = SqlSrvDB.executeQuery(sql);
-                while (userRs.next()) {
-                    username = userRs.getString(1);
+                while(userRs.next()){
+                    username=userRs.getString(1);
                 }
 
                 Date lydate = rs.getDate("lydate");
@@ -96,7 +96,7 @@ public class mainServlet extends HttpServlet {
 
             }
             rs.close();
-            SqlSrvDB.closeStmt();                    //�ر����
+            SqlSrvDB.closeStmt();					//关闭语句
             SqlSrvDB.closeConn();
 
         } catch (SQLException e) {
@@ -109,9 +109,8 @@ public class mainServlet extends HttpServlet {
         req.setAttribute("pageNum", pageNum);
 
 
-        RequestDispatcher rd = req.getRequestDispatcher("/main.jsp");
+        RequestDispatcher rd =req.getRequestDispatcher("/main.jsp");
         rd.forward(req, resp);
-
     }
 
 }

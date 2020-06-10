@@ -6,14 +6,28 @@ import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
 import com.project.pro.vo.UserTable;
 
-import java.sql.Connection;
 import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.Map;
 
+/**
+ * ZHANGZHAOHONG 2018128338
+ * */
 public class AddLyAction extends ActionSupport {
     private LyTable ly;
+
+    @Override
+    public void validate() {
+        String title = ly.getTitle();
+        String content = ly.getLyContent();
+        if (title==null || "".equals(title)){
+            //保存错误信息
+            super.addFieldError("title","数据不能为空！");
+        }
+
+        if (content==null || "".equals(content)){
+            super.addFieldError("content","数据不能为空");
+        }
+    }
 
     /**
      * @return
@@ -31,23 +45,27 @@ public class AddLyAction extends ActionSupport {
         String content = ly.getLyContent();
         int userid = user.getId();
         Date lydate = new Date(System.currentTimeMillis());
+        String sql = "insert lyTable (userid,lydate,title,lyContent) values('" + userid + "','" + lydate + "','" + title + "','" + content + "')";
         SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
-        String sql = "insert lyTable(userid,lydate,title,lyContent) values(?,?,?,?)";
-        Connection conn = SqlSrvDB.getConn();
-        PreparedStatement pstmt = null;
+        System.out.println("[SystemLog]" + sql);
+//        Connection conn = SqlSrvDB.getConn();
+//        PreparedStatement pstmt = null;
         int num = 0;
-        try {
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1, userid);
-            pstmt.setDate(2, lydate);
-            pstmt.setString(3, title);
-            pstmt.setString(4, content);
-            num = pstmt.executeUpdate();
-            pstmt.close();
-            conn.close();
-        } catch (SQLException e) {
-
-        }
+        num = SqlSrvDB.executeInsert(sql);
+        SqlSrvDB.closeStmt();
+        SqlSrvDB.closeConn();
+//        try {
+//            pstmt = conn.prepareStatement(sql);
+//            pstmt.setInt(1, userid);
+//            pstmt.setDate(2, lydate);
+//            pstmt.setString(3, title);
+//            pstmt.setString(4, content);
+//            num = pstmt.executeUpdate(sql);
+//            pstmt.close();
+//            conn.close();
+//        } catch (Exception e) {
+//            System.out.println("[SystemLog]" + e.toString());
+//        }
         if (num > 0) {
             return SUCCESS;
         } else {

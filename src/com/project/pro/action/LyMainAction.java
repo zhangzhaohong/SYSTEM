@@ -11,6 +11,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * ZHANGZHAOHONG 2018128338
+ * */
 public class LyMainAction extends ActionSupport {
 
     /**
@@ -49,9 +52,10 @@ public class LyMainAction extends ActionSupport {
                 tempGet = (totalRec % pageSize == 0) ? pageSize : (totalRec % pageSize);
             }
 
-            // sql = "select * from lyTable";
-            sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
-
+            sql = "select * from lyTable";
+            //SELECT * FROM (errorData) ORDER BY (errorID) DESC LIMIT (:minNum), (:dataNum)
+            sql = "select * from lyTable order by id desc limit " + (pageNum - 1) * pageSize + "," + pageSize;
+            // sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
             rs = SqlSrvDB.executeQuery(sql);
 
             // int tempint = 1;
