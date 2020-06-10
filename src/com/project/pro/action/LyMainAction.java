@@ -53,6 +53,8 @@ public class LyMainAction extends ActionSupport {
             }
 
             sql = "select * from lyTable";
+            //SELECT * FROM (errorData) ORDER BY (errorID) DESC LIMIT (:minNum), (:dataNum)
+            sql = "select * from lyTable order by id desc limit " + (pageNum - 1) * pageSize + "," + pageSize;
             // sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
             rs = SqlSrvDB.executeQuery(sql);
 

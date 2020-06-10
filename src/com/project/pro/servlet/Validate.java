@@ -16,6 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * zhangzhaohong
+ * 2018128338
+ * */
 @WebServlet(name="Validate",urlPatterns={"/ValidateServ"})
 public class Validate extends HttpServlet {
 
@@ -35,7 +39,6 @@ public class Validate extends HttpServlet {
 
         UserTable user = null;
         HttpSession session = request.getSession();
-
         user = (UserTable)session.getAttribute("user");//验证成功标识
 
         if(user==null){
@@ -49,8 +52,6 @@ public class Validate extends HttpServlet {
 
             try{
                 pstmt = conn.prepareStatement(sql);
-
-
                 while(rs.next())
                 {
                     if((rs.getString("username").trim().compareTo(usr)==0)

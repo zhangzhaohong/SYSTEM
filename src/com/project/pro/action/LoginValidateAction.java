@@ -16,6 +16,22 @@ public class LoginValidateAction extends ActionSupport {
 
     private UserTable user;
 
+    @Override
+    public void validate() {
+        //用户名非空
+        String usr = user.getUsername();
+        String pwd = user.getPassword();
+        if (usr==null || "".equals(usr)){
+            //保存错误信息
+            super.addFieldError("userName","用户名必须填写！");
+        }
+
+        //密码
+        if (pwd==null || "".equals(pwd)){
+            super.addFieldError("pwd","密码必填");
+        }
+    }
+
     /**
      * @return
      */

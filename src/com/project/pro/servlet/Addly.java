@@ -17,6 +17,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * zhangzhaohong
+ * 2018128338
+ * */
 @WebServlet(name="Addly",urlPatterns={"/AddlyServ"})
 public class Addly extends HttpServlet {
 
@@ -37,26 +41,25 @@ public class Addly extends HttpServlet {
         Date lydate = new Date(System.currentTimeMillis());
 
         SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
-        String sql = "insert lyTable(userid,lydate,title,lyContent) values(?,?,?,?)";
-
-        Connection conn = SqlSrvDB.getConn();
-        PreparedStatement pstmt = null;
-        int num=0;
-        try{
-            pstmt = conn.prepareStatement(sql);
-
-            pstmt.setInt(1,userid);
-            pstmt.setDate(2,lydate);
-            pstmt.setString(3,title);
-            pstmt.setString(4,content);
-
-            num = pstmt.executeUpdate();
-            pstmt.close();
-            conn.close();
-
-        }catch(SQLException e){
-
-        }
+        String sql = "insert lyTable (userid,lydate,title,lyContent) values('" + userid + "','" + lydate + "','" + title + "','" + content + "')";
+//        Connection conn = SqlSrvDB.getConn();
+//        PreparedStatement pstmt = null;
+        int num = 0;
+        num = SqlSrvDB.executeInsert(sql);
+        SqlSrvDB.closeStmt();
+        SqlSrvDB.closeConn();
+//        try {
+//            pstmt = conn.prepareStatement(sql);
+//            pstmt.setInt(1, userid);
+//            pstmt.setDate(2, lydate);
+//            pstmt.setString(3, title);
+//            pstmt.setString(4, content);
+//            num = pstmt.executeUpdate(sql);
+//            pstmt.close();
+//            conn.close();
+//        } catch (Exception e) {
+//            System.out.println("[SystemLog]" + e.toString());
+//        }
 
         response.setContentType("text/html;charset=GB2312");
         PrintWriter out = response.getWriter();

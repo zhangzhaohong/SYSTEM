@@ -19,6 +19,27 @@ public class RegUserAction extends ActionSupport {
         this.user = user;
     }
 
+    @Override
+    public void validate() {
+        //用户名非空
+        String usr = user.getUsername();
+        String pwd = user.getPassword();
+        String urt = user.getUserType();
+        if (usr==null || "".equals(usr)){
+            //保存错误信息
+            super.addFieldError("userName","用户名必须填写！");
+        }
+
+        //密码
+        if (pwd==null || "".equals(pwd)){
+            super.addFieldError("pwd","密码必填");
+        }
+
+        if (urt==null || "".equals(urt)){
+            super.addFieldError("urt","种类不能为空");
+        }
+    }
+
     /**
      * @return
      */
