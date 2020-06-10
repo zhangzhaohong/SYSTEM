@@ -49,9 +49,8 @@ public class LyMainAction extends ActionSupport {
                 tempGet = (totalRec % pageSize == 0) ? pageSize : (totalRec % pageSize);
             }
 
-            // sql = "select * from lyTable";
-            sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
-
+            sql = "select * from lyTable";
+            // sql = "select * from (select top "+tempGet+" * from(select top "+pageNum*pageSize+" * from lyTable order by id)a order by id desc)b order by id";
             rs = SqlSrvDB.executeQuery(sql);
 
             // int tempint = 1;

@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="481a650c-8dd9-4c4a-bf03-bdca5d572444" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/AddLyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/AddLyAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/AddLyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/AddLyAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/AddLyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/AddLyAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reg.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -56,8 +58,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/web/WEB-INF" />
@@ -164,7 +166,7 @@
       <workItem from="1591721634900" duration="4174000" />
       <workItem from="1591726075562" duration="164000" />
       <workItem from="1591726584710" duration="5406000" />
-      <workItem from="1591763395276" duration="6958000" />
+      <workItem from="1591763395276" duration="12207000" />
     </task>
     <servers />
   </component>
@@ -199,53 +201,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="22" />
+          <line>69</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="23" />
+          <line>70</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="24" />
+          <line>85</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="27" />
+          <line>97</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
           <line>98</line>
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
           <line>99</line>
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="30" />
+          <line>95</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
-          <line>103</line>
-          <option name="timeStamp" value="31" />
+          <line>25</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

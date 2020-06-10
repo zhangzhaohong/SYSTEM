@@ -35,4 +35,5 @@
             <result name="error">/error.jsp</result>
         </action>
     </package>
+    <constant name="struts.i18n.encoding" value="GB2312"/>
 </struts>
