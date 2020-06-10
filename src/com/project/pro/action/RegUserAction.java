@@ -22,7 +22,7 @@ public class RegUserAction extends ActionSupport {
      */
     public String execute() {
         if (user == null) {
-            return "error";
+            return ERROR;
         }
         String usr = user.getUsername();
         String pwd = user.getPassword();

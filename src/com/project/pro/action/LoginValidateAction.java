@@ -45,9 +45,7 @@ public class LoginValidateAction extends ActionSupport {
                         sessionUser.setUsername(rs.getString("username"));
                         sessionUser.setPassword(rs.getString(3));
                         sessionUser.setUserType(rs.getString(4));
-
                         session.put("user", sessionUser);
-
                         validated = true;
                         break;
                     }
