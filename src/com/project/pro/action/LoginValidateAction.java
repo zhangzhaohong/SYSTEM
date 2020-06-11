@@ -1,99 +1,177 @@
 package com.project.pro.action;
 
+import com.project.pro.service.IUserTableService;
+import com.project.pro.service.impl.UserTableService;
+import com.project.pro.vo.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import com.project.pro.jdbc.SqlSrvDBConn;
-import com.project.pro.vo.UserTable;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Map;
 
 /**
  * ZHANGZHAOHONG 2018128338
- * */
+ */
 public class LoginValidateAction extends ActionSupport {
 
-    private UserTable user;
+    private Test user;
+    private IUserTableService userService;
+    private String nameErr;
+    private String pwdErr;
+    private String nameregErr;
+    private String pwdregErr;
+    private String pwdagregErr;
+    private String typeregErr;
+    private String userpwdag;
+
+    public String getUserpwdag() {
+        return userpwdag;
+    }
+
+    public void setUserpwdag(String userpwdag) {
+        this.userpwdag = userpwdag;
+    }
+
+    public String getNameErr() {
+        return nameErr;
+    }
+
+    public void setNameErr(String nameErr) {
+        this.nameErr = nameErr;
+    }
+
+    public String getPwdErr() {
+        return pwdErr;
+    }
+
+    public void setPwdErr(String pwdErr) {
+        this.pwdErr = pwdErr;
+    }
+
+    public String getNameregErr() {
+        return nameregErr;
+    }
+
+    public void setNameregErr(String nameregErr) {
+        this.nameregErr = nameregErr;
+    }
+
+    public String getPwdregErr() {
+        return pwdregErr;
+    }
+
+    public void setPwdregErr(String pwdregErr) {
+        this.pwdregErr = pwdregErr;
+    }
+
+    public String getPwdagregErr() {
+        return pwdagregErr;
+    }
+
+    public void setPwdagregErr(String pwdagregErr) {
+        this.pwdagregErr = pwdagregErr;
+    }
+
+    public String getTyperegErr() {
+        return typeregErr;
+    }
+
+    public void setTyperegErr(String typeregErr) {
+        this.typeregErr = typeregErr;
+    }
+
+    public Test getUser() {
+        return user;
+    }
 
     @Override
     public void validate() {
-        //用户名非空
-        String usr = user.getUsername();
-        String pwd = user.getPassword();
-        if (usr==null || "".equals(usr)){
-            //保存错误信息
-            super.addFieldError("userName","用户名必须填写！");
+        if (user.getUsername() == null || user.getUsername().trim().equals("")) {
+            nameErr = "数据不能为空";
+            this.addFieldError("", "");
         }
+        if (user.getUserpwd() == null || user.getUserpwd().trim().equals("")) {
+            pwdErr = "数据不能为空";
+            this.addFieldError("", "");
+        }
+    }
 
-        //密码
-        if (pwd==null || "".equals(pwd)){
-            super.addFieldError("pwd","密码必填");
-        }
+    public void setUser(Test user) {
+        this.user = user;
     }
 
     /**
      * @return
      */
     public String execute() {
+
         String usr = user.getUsername();
-        String pwd = user.getPassword();
-        String urt = user.getUserType();
+        String pwd = user.getUserpwd();
+        String urt = user.getUsertype();
+
         boolean validated = false;
+
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         ActionContext context = ActionContext.getContext();
         Map session = context.getSession();
 
-        UserTable sessionUser = null;
-        //HttpSession session = request.getSession();
+        Test sessionUser = null;
 
-        sessionUser = (UserTable) session.get("user");
+        sessionUser = (Test) session.get("user");
+
         if (sessionUser == null) {
-            String sql = "select * from userTable";
-            SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
-            ResultSet rs = SqlSrvDB.executeQuery(sql);
-            System.out.println("[SystemLog]" + sql);
-            try {
-                //pstmt = conn.prepareStatement(sql);
-                while (rs.next()) {
-                    if ((rs.getString("username").trim().compareTo(usr) == 0)
-                            && (rs.getString("password").compareTo(pwd) == 0)
-                            && (rs.getString("userType").compareTo(urt) == 0)) {
-                        sessionUser = new UserTable();
-                        sessionUser.setId(rs.getInt("id"));
-                        sessionUser.setUsername(rs.getString("username"));
-                        sessionUser.setPassword(rs.getString(3));
-                        sessionUser.setUserType(rs.getString(4));
-                        session.put("user", sessionUser);
-                        validated = true;
-                        break;
-                    }
-                }
-                rs.close();
-            } catch (SQLException e) {
-                System.out.println(e.toString());
+
+            //IUserTableDAO userDao = (IUserTableDAO)ac.getBean("userTableDAO");		//new UserTableDAO();
+
+            //sessionUser = userDao.validatTest(user.getUsername(), user.getUserpwd(), user.getUsertype());
+
+            sessionUser = userService.validateUser(usr, pwd, urt);
+
+            if (sessionUser != null) {
+                session.put("user", sessionUser);
+                validated = true;
             }
-            SqlSrvDB.closeStmt();
-            SqlSrvDB.closeConn();
+
         } else {
             validated = true;
         }
-
 
         if (validated) {
             return "success";
         } else {
             return "error";
         }
-
-
     }
 
-    public UserTable getUser() {
-        return user;
+    public String register() {
+
+        if (user == null) {
+            return ERROR;
+        }
+
+        //ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        //IUserTableDAO userDao = (IUserTableDAO)ac.getBean("userTableDAO");		//new UserTableDAO();
+
+        //int num = userDao.saveUser(user);
+
+        int num = userService.registerUser(user);
+
+        if (num > 0) {
+            userpwdag = null;
+            return SUCCESS;
+        } else {
+            return ERROR;
+        }
     }
 
-    public void setUser(UserTable user) {
-        this.user = user;
+    public IUserTableService getUserService() {
+        return userService;
+    }
+
+    public void setUserService(IUserTableService userService) {
+        this.userService = userService;
     }
 }

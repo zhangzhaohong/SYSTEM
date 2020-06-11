@@ -7,26 +7,126 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="481a650c-8dd9-4c4a-bf03-bdca5d572444" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LogoutAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/ModifyUserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/service/IUserTableService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/service/impl/UserTableService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/messageResource_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/messageResource_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/spring-form.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/spring.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/images/login-bg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LogoutAction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/ModifyUserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/service/IUserTableService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/service/impl/UserTableService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/messageResource_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/system/messageResource_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/project/pro/action/LogoutAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/project/pro/action/ModifyUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/project/pro/service/IUserTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/project/pro/service/impl/UserTableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/messageResource_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/messageResource_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/spring-form.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/spring.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/images/login-bg.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/system_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/system_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/mainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/mainServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/META-INF/system.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Classes.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Classes.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Major.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Major.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SignIn.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SignIn.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Success.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Success.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LoginValidateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LoginValidateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/dao/impl/UserTableDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/dao/impl/UserTableDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/Test.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/Test.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/UserInfo.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/mainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/mainServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/reg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/META-INF/system.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Classes.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Classes.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Major.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Major.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/SignIn.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/SignIn.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Success.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Success.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LoginValidateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LoginValidateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/dao/impl/UserTableDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/dao/impl/UserTableDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/Test.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/Test.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/UserInfo.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/system/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/jdbc/SqlSrvDBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/jdbc/SqlSrvDBConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/SignInDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/SignInDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Classes.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Classes.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Major.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Major.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/SignIn.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/SignIn.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Success.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Success.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/IUserTableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/IUserTableDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/impl/UserTableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/impl/UserTableDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/Test.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/Test.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/UserInfo.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reg.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="homework@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="homework@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="homework@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="homework: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="homework@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="homework: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="test: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,30 +153,33 @@
   </component>
   <component name="ProjectId" id="1d5j1cALCWWrZEh0Sg2v6P7lwBw" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/project/pro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/project/pro" />
-      <recent name="$PROJECT_DIR$/src/com/project" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/com/project/pro/vo" />
-      <recent name="$PROJECT_DIR$/web" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.project.pro.factory" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.project.pro.action" />
+      <recent name="com.project.org.action" />
+      <recent name="com.project.pro.factory" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/web/images" />
+      <recent name="$PROJECT_DIR$/src/com/project/pro" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,6 +267,9 @@
       </method>
     </configuration>
   </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -180,7 +286,9 @@
       <workItem from="1591763395276" duration="20303000" />
       <workItem from="1591867561153" duration="353000" />
       <workItem from="1591877107270" duration="71000" />
-      <workItem from="1591877198601" duration="2001000" />
+      <workItem from="1591877198601" duration="12333000" />
+      <workItem from="1591891415858" duration="309000" />
+      <workItem from="1591893355060" duration="4533000" />
     </task>
     <servers />
   </component>
@@ -215,13 +323,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
-          <line>25</line>
+          <line>34</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
-          <line>30</line>
+          <line>35</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/dao/impl/UserTableDAO.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/project/pro/dao/impl/UserTableDAO.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,7 +20,7 @@ public class SignInDaoImp extends BaseDAO implements SignInDao{
 		Iterator it=users.iterator();
 		while(it.hasNext()){
 			if(users.size()!=0){
-				SignIn user=(SignIn)it.next();	//�����־û��� JavaBean ���� user
+				SignIn user=(SignIn)it.next();
 				return user;
 			}
 		}

@@ -62,35 +62,47 @@
 <div align="center" style="margin: 50px">
     <s:i18n name="messageResource">
         <s:form action="loginValidateAction" method="post" theme="simple">
-            <table border="1" cellspacing="1" cellpadding="1" align="center">
-                <caption>用户登录</caption>
-                <tr>
-                    <td width="150" align="right">用户名：</td>
-                    <td width="250">
-                        <s:textfield name="user.username" size="20"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="150" align="right">密码:</td>
-                    <td width="220">
-                        <s:password name="user.password" size="20"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="150" align="right">用户级别：</td>
-                    <td>
-                        <s:radio list="#{'admin':'管理员','vip':'VIP','guest':'游客' }" name="user.userType" value="'admin'"></s:radio>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <s:submit value="登录"/>
-                        <s:reset value="重置"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><img src="images/login/lo.gif" /></td>
-                </tr>
+        <table style="margin-top:30px;margin-left: 50px;">
+            <tr>
+                <td><img src="images/login/lo_03.gif" width="205" /></td>
+                <td><img src="images/login/lo_04.gif" width="392" /></td>
+            </tr>
+            <tr>
+                <td><img src="images/login/lo_06.gif" /></td>
+                <td class="login_tab">
+                    <table>
+                        <caption>用户登录</caption>
+                        <tr>
+                            <th><s:label key="username"/></th>
+                            <td width="250">
+                                <<s:textfield name="user.username" size="20" style="width:60%;float:left;"/>
+                                <s:label name="nameErr" style="color:red;width:40%;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><s:label key="userpwd"/></th>
+                            <td width="220">
+                                <s:password name="user.userpwd" size="20" style="width:60%;float:left;"/>
+                                <s:label name="pwdErr" style="color:red;width:40%;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><s:label key="usertype"/></th>
+                            <td>
+                                <s:select name="user.usertype" value="admin" list="#{'admin':'管理员','vip':'vip会员','guest':'游客'}" cssClass="form_input" style="width:60%;float:left;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="STYLE1" style="text-align:center;">
+                                <input type="image" src="images/login/dl.gif" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="images/login/lo.gif" /></td>
+            </tr>
             </table>
         </s:form>
     </s:i18n>

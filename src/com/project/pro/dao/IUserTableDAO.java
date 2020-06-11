@@ -1,6 +1,5 @@
 package com.project.pro.dao;
 
-
 import com.project.pro.vo.Test;
 
 public interface IUserTableDAO {

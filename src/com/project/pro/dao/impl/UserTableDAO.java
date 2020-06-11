@@ -9,14 +9,16 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.List;
+import java.util.Objects;
 
 public class UserTableDAO extends BaseDAO implements IUserTableDAO {
 
 	@Override
 	public Test validatTest(String username, String userpwd, String usertype) {
-		String hql = "from Test where username=? and userpwd=? and usertype=?";
+		//String hql = "from Test where username=? and userpwd=? and usertype=?";
+		String hql = "from Test where username='" + username + "' and userpwd='" + userpwd + "' and usertype='" + usertype + "'";
     	
-    	Query qu = getSession().createQuery(hql);		
+    	Query qu = Objects.requireNonNull(HibernateSessionFactory.getSession()).createQuery(hql);
 		qu.setString(0, username);
 		qu.setString(1, userpwd);
 		qu.setString(2, usertype);
