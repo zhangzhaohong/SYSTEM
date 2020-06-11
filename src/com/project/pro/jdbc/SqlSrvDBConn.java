@@ -11,7 +11,7 @@ public class SqlSrvDBConn {
     public SqlSrvDBConn() {
         stmt = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("数据库驱动加载成功");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
