@@ -1,7 +1,6 @@
 package com.project.pro.action;
 
 import com.project.pro.service.IUserTableService;
-import com.project.pro.service.impl.UserTableService;
 import com.project.pro.vo.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -132,6 +131,8 @@ public class LoginValidateAction extends ActionSupport {
             if (sessionUser != null) {
                 session.put("user", sessionUser);
                 validated = true;
+            } else {
+                validated = false;
             }
 
         } else {

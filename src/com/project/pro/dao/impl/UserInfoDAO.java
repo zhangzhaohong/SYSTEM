@@ -28,7 +28,7 @@ public class UserInfoDAO extends BaseDAO implements IUserInfoDAO {
 	}
 
 	@Override
-	public int saveOrUpdate(UserInfo userinfo,int id) {
+	public int saveOrUpdate(UserInfo userinfo, int id) {
 		Session session = getSession();
 		session.clear();
 		Transaction ts = session.beginTransaction();

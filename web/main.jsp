@@ -121,7 +121,7 @@
 <c:if test="${sessionScope.user==null}">
     <jsp:forward page="login.jsp"/>
 </c:if>
-${user.username } : ${user.userType},ÄúºÃ£¡»¶Ó­µÇÂ¼ÁôÑÔ°å¡£
+${user.username } : ${user.usertype},ÄúºÃ£¡»¶Ó­µÇÂ¼ÁôÑÔ°å¡£
 <div>
     <table border="1">
         <caption>ËùÓĞÁôÑÔĞÅÏ¢</caption>

@@ -45,7 +45,7 @@
 		  abstract="false" lazy-init="default" autowire="default">
 	</bean>
 	<bean id="regUserAction"
-		  class="com.project.pro.action.RegUserAction" abstract="false"
+		  class="com.project.pro.action.LoginValidateAction" init-method="register" abstract="false"
 		  lazy-init="default" autowire="default">
 	</bean>
 	<bean id="userService"

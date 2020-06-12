@@ -2,6 +2,7 @@ package com.project.pro.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.project.LogUtil;
 import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
 import com.project.pro.vo.UserTable;
@@ -47,7 +48,7 @@ public class AddLyAction extends ActionSupport {
         Date lydate = new Date(System.currentTimeMillis());
         String sql = "insert lyTable (userid,lydate,title,lyContent) values('" + userid + "','" + lydate + "','" + title + "','" + content + "')";
         SqlSrvDBConn SqlSrvDB = new SqlSrvDBConn();
-        System.out.println("[SystemLog]" + sql);
+        new LogUtil().printLn(sql);
 //        Connection conn = SqlSrvDB.getConn();
 //        PreparedStatement pstmt = null;
         int num = 0;
