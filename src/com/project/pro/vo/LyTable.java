@@ -1,63 +1,83 @@
 package com.project.pro.vo;
 
-import java.sql.Date;
+import java.util.Date;
 
-public class LyTable {
+/**
+ * Lytable entity. @author MyEclipse Persistence Tools
+ */
 
-    private int id;
-    private int userid;
-    private Date lydate;
-    private String title;
-    private String lyContent;
+public class LyTable implements java.io.Serializable {
 
-    private String username;
+	// Fields
 
-    public int getId() {
-        return id;
-    }
+	private Integer id;
+	private Test test;
+	private Date lydate;
+	private String title;
+	private String lyContent;
+	private String username;
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	// Constructors
 
-    public int getUserid() {
-        return userid;
-    }
+	/** default constructor */
+	public LyTable() {
+	}
 
-    public void setUserid(int userid) {
-        this.userid = userid;
-    }
+	/** full constructor */
+	public LyTable(Test test, Date lydate, String title, String lyContent) {
+		this.test = test;
+		this.lydate = lydate;
+		this.title = title;
+		this.lyContent = lyContent;
+	}
 
-    public Date getLydate() {
-        return lydate;
-    }
+	// Property accessors
 
-    public void setLydate(Date lydate) {
-        this.lydate = lydate;
-    }
+	public Integer getId() {
+		return this.id;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+	public Test getTest() {
+		return this.test;
+	}
 
-    public String getLyContent() {
-        return lyContent;
-    }
+	public void setTest(Test test) {
+		this.test = test;
+	}
 
-    public void setLyContent(String lyContent) {
-        this.lyContent = lyContent;
-    }
+	public Date getLydate() {
+		return this.lydate;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public void setLydate(Date lydate) {
+		this.lydate = lydate;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public String getTitle() {
+		return this.title;
+	}
 
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getLyContent() {
+		return this.lyContent;
+	}
+
+	public void setLyContent(String lyContent) {
+		this.lyContent = lyContent;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getUsername() {
+		return username;
+	}
 }

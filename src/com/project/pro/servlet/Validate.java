@@ -20,7 +20,7 @@ import javax.servlet.http.HttpSession;
  * zhangzhaohong
  * 2018128338
  * */
-@WebServlet(name="Validate",urlPatterns={"/ValidateServ"})
+@WebServlet(name="validateServlet",urlPatterns={"/validateServlet"})
 public class Validate extends HttpServlet {
 
     private static final long serialVersionUID = -3737143634491339713L;
