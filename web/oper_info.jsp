@@ -30,7 +30,7 @@
 						<tr>
 							<td style="width: 156px;height: 20px;text-align: center;color:blue;">下一步:</td>
 							<td style="height: 20px;text-align: center;color:orange;">
-								正在转向${next_info }......	
+								正在跳转${next_info }......
 								<script type="text/javascript">
 									onload=function(){ 
 										setTimeout(go, 3000);

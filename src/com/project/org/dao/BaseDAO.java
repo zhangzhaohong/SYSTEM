@@ -5,6 +5,9 @@ import com.project.pro.factory.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+/**
+ * 2018128338 张兆泓
+ * */
 public class BaseDAO {
 
     private SessionFactory sessionFactory;

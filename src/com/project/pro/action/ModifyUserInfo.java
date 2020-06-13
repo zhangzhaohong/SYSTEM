@@ -12,6 +12,9 @@ import org.springframework.web.context.ContextLoader;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * 2018128338 张兆泓
+ * **/
 public class ModifyUserInfo extends ActionSupport {
 
     ApplicationContext ac;
@@ -33,7 +36,6 @@ public class ModifyUserInfo extends ActionSupport {
         if (ac == null) ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 //        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
         IUserInfoDAO userInfoDao = (IUserInfoDAO) ac.getBean("userInfoDAO");    //new UserInfoDAO();
-
         String method = request.getMethod();
         if (method.equalsIgnoreCase("get")) {
             try {
@@ -49,14 +51,12 @@ public class ModifyUserInfo extends ActionSupport {
             }
             return SUCCESS;
         } else {
-
             UserInfo info = new UserInfo();
             int id = 0;
             if (userinfo.getId() != null) {
                 id = userinfo.getId();
                 info.setId(userinfo.getId());
             }
-
             //info.setId(userinfo.getId());
             info.setCode(userinfo.getCode().trim());
             info.setCnname(userinfo.getCnname().trim());
@@ -65,12 +65,9 @@ public class ModifyUserInfo extends ActionSupport {
             info.setSpec(userinfo.getSpec().trim());
             info.setRemarks(userinfo.getRemarks().trim());
             info.setTest(userinfo.getTest());
-
             int num = userInfoDao.saveOrUpdate(info, id);
-
             if (num > 0) {
                 return "main";
-
             } else {
                 return SUCCESS;
             }

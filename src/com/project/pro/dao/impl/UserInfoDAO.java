@@ -9,6 +9,9 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
+/**
+ * 2018128338 张兆泓
+ * */
 public class UserInfoDAO extends BaseDAO implements IUserInfoDAO {
 
 	@Override

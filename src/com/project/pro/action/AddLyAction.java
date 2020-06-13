@@ -47,18 +47,18 @@ public class AddLyAction extends ActionSupport {
         this.ly = ly;
     }
 
-    @Override
-    public void validate() {
-        String title = ly.getTitle();
-        String content = ly.getLyContent();
-        if (title == null || "".equals(title)) {
-            //保存错误信息
-            super.addFieldError("title", "数据不能为空！");
-        }
-        if (content == null || "".equals(content)) {
-            super.addFieldError("content", "数据不能为空！");
-        }
-    }
+//    @Override
+//    public void validate() {
+//        String title = ly.getTitle();
+//        String content = ly.getLyContent();
+//        if (title == null || "".equals(title)) {
+//            //保存错误信息
+//            super.addFieldError("title", "数据不能为空！");
+//        }
+//        if (content == null || "".equals(content)) {
+//            super.addFieldError("content", "数据不能为空！");
+//        }
+//    }
 
     /**
      * @return

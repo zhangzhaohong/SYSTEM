@@ -1,46 +1,47 @@
-<%@ page language="java"  pageEncoding="gb2312" import="com.project.pro.vo.*"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<html lang="en">
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" import="com.ruanjian.test.model.vo.*"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="s" uri="/struts-tags" %>
+<html>
 <head>
-	<title>ÁôÑÔ°å</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>ç•™è¨€æ¿</title>
 	<link href="./css/oper_area.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div style="float: left;">
+<div style="width: 100%;">
 	<s:form action="addLyAction" method="post" theme="simple">
 		<table style="width: 100%;border: 0;border-spacing: 0;padding: 0;">
 			<tr>
 				<td class="title-bar">
-					<table style="width: 98%;border-spacing: 0;padding: 0;">
+					<table style="width: 100%;border-spacing: 0;padding: 0;">
 						<tr>
-							<td style="width: 26" class="title-bar-title-icon">&nbsp;</td>
-							<td style="width: 745" class="title-bar-text">Ìí¼ÓÁôÑÔ</td>
+							<td style="width: 26px" class="title-bar-title-icon">&nbsp;</td>
+							<td style="width: 745px" class="title-bar-text">æ·»åŠ ç•™è¨€</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 		</table>
-		<table style="width: 99%;border-spacing: 0;padding: 0;text-align: center;" class="table-frame" id="p1">
+		<table style="width: 100%;border-spacing: 0;padding: 0;text-align: center;margin: 100px 0 0 0;" id="p1">
 			<tr>
-				<td style="width: 18%;height: 22" class="table-frame-input-title">ÁôÑÔ±êÌâ</td>
-				<td style="height: 22" class="table-cell-input">
-					<s:textfield name="ly.title" cssClass="form-input" size="51"/>
+				<td style="width: 24%;height: 24px;background-color: rgb(239,246,254);" class="table-frame-input-title">ç•™è¨€æ ‡é¢˜</td>
+				<td style="height: 24px;background-color: rgb(239,246,254);" class="table-cell-input">
+					<s:textfield name="ly.title" cssClass="form-input" size="100"/>
 					<s:hidden name="ly.id"/>
 				</td>
 			</tr>
 			<tr>
-				<td style="width: 18%;height: 22" class="table-frame-input-title">ÁôÑÔÄÚÈÝ</td>
-				<td style="height: 22" class="table-cell-input">
-					<s:textarea rows="5" cols="50" name="ly.lyContent"/>
+				<td style="width: 24%;height: 350px;line-height: 22;background-color: rgb(239,246,254);" class="table-frame-input-title">ç•™è¨€å†…å®¹</td>
+				<td style="height: 350px;background-color: rgb(239,246,254);" class="table-cell-input">
+					<s:textarea rows="24" cols="100" name="ly.lyContent"/>
 				</td>
 			</tr>
 		</table>
 		<table style="width: 99%;border-spacing: 0;padding: 0;text-align: center;border:0;">
 			<tr>
 				<td class="buttun-bar">
-					<s:submit value="Ìá½»" cssClass="form-buttun"/>
-					<s:reset value="ÖØÖÃ" cssClass="form-buttun"/>
+					<s:submit value="æäº¤" cssClass="form-buttun"/>
+					<s:reset value="é‡ç½®" cssClass="form-buttun"/>
 				</td>
 			</tr>
 		</table>
@@ -56,4 +57,3 @@
 </div>
 </body>
 </html>
-

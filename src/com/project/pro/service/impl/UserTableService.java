@@ -4,6 +4,9 @@ import com.project.pro.dao.IUserTableDAO;
 import com.project.pro.service.IUserTableService;
 import com.project.pro.vo.Test;
 
+/**
+ * 2018128338 zhangzhaohong
+ * */
 public class UserTableService implements IUserTableService {
 	
 	private IUserTableDAO userDAO;

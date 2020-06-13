@@ -47,32 +47,23 @@ public class LyMainAction extends ActionSupport {
         String searchCon = request.getParameter(searchType);
 
         try {
-
             ILyTableDAO lyDao = (ILyTableDAO)ac.getBean("lyTableDAO");	//new LyTableDAO();
             totalRec = lyDao.getCountRec(filter,order,searchType,searchCon);
-
             pageCount = (totalRec%pageSize==0)?(totalRec/pageSize):(totalRec/pageSize+1);
-
             pageNum = (pageStr==null)?1:Integer.parseInt(pageStr);
             if(pageNum==0) {
                 pageNum=1;
             }
             lyList = lyDao.getLyList((pageNum-1)*pageSize, pageSize,filter,order,searchType,searchCon);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
         Map session = ActionContext.getContext().getSession();
-
         session.put("myLyList", lyList);
         session.put("pageCount", pageCount);
         session.put("pageNum", pageNum);
         session.put("totalRec", totalRec);
-
         return SUCCESS;
-
 //        int pageSize = 5;
 //        int totalRec = 0;
 //        int pageCount = 0;

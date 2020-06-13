@@ -4,6 +4,9 @@ import com.project.pro.vo.LyTable;
 
 import java.util.List;
 
+/**
+ * 2018128338 张兆泓
+ * */
 public interface ILyTableDAO {
 	
 	public int getCountRec(String filter, String order, String searchType, String searchCon);
