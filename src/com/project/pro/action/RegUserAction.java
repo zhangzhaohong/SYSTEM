@@ -2,17 +2,17 @@ package com.project.pro.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.project.pro.dao.IUserTableDAO;
-import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.Test;
-import com.project.pro.vo.UserTable;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.ContextLoader;
 
 /**
  * ZHANGZHAOHONG 2018128338
- * */
+ */
 public class RegUserAction extends ActionSupport {
 
+    ApplicationContext ac;
     private Test user;
     private String nameregErr;
     private String pwdregErr;
@@ -74,18 +74,18 @@ public class RegUserAction extends ActionSupport {
         String usr = user.getUsername();
         String pwd = user.getUserpwd();
         String urt = user.getUsertype();
-        if (usr==null || "".equals(usr)){
+        if (usr == null || "".equals(usr)) {
             //保存错误信息
-            super.addFieldError("userName","用户名必须填写！");
+            super.addFieldError("userName", "用户名必须填写！");
         }
 
         //密码
-        if (pwd==null || "".equals(pwd)){
-            super.addFieldError("pwd","密码必填");
+        if (pwd == null || "".equals(pwd)) {
+            super.addFieldError("pwd", "密码必填");
         }
 
-        if (urt==null || "".equals(urt)){
-            super.addFieldError("urt","种类不能为空");
+        if (urt == null || "".equals(urt)) {
+            super.addFieldError("urt", "种类不能为空");
         }
     }
 
@@ -95,22 +95,21 @@ public class RegUserAction extends ActionSupport {
      */
     public String execute() {
 
-        if (user==null) {
+        if (user == null) {
             return ERROR;
         }
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ac = ContextLoader.getCurrentWebApplicationContext();
+        if (ac == null) ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        IUserTableDAO userDao = (IUserTableDAO)ac.getBean("userTableDAO");		//new UserTableDAO();
+        IUserTableDAO userDao = (IUserTableDAO) ac.getBean("userTableDAO");        //new UserTableDAO();
 
         int num = userDao.saveUser(user);
 
-        if(num>0)
-        {
+        if (num > 0) {
             return SUCCESS;
-        }
-        else
-        {
+        } else {
             return ERROR;
         }
     }

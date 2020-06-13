@@ -1,4 +1,4 @@
-<%@ page import="java.sql.ResultSet" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: zhangzhaohong
   Date: 2020-03-14

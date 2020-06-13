@@ -15,7 +15,8 @@ public class hello_4 extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
     }
-    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException{
+
+    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
         out.println("<html><body><h1>181软件3班 张兆泓</h1></body></html>");

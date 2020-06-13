@@ -1,29 +1,64 @@
-<%@ page language="java"  pageEncoding="gb2312" import="com.project.pro.vo.*"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<html lang="en">
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"
+         import="com.ruanjian.test.model.vo.*" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="s" uri="/struts-tags" %>
+<html>
 <head>
-	<title>¡Ù—‘∞Â</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ÁïôË®ÄÊùø</title>
+    <link href="./css/oper_area.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<c:if test="${sessionScope.user==null}">
-		<jsp:forward page="login.jsp"/>
-	</c:if>
-	<s:form action="addLyAction" method="post" theme="simple" >
-		<table>
-			<caption>ÃÓ–¥¡Ù—‘–≈œ¢`</caption>
-			<tr>
-				<td>¡Ù—‘±ÍÃ‚</td>
-				<td><s:textfield name="ly.title"/></td>
-			</tr>
-			<tr>
-				<td>¡Ù—‘ƒ⁄»›</td>
-				<td><s:textarea name="ly.lyContent" id="content" cols="35" rows="5"/></td>
-			</tr>
-		</table>
-		<s:submit value="Ã·Ωª"/>
-		<s:reset value="÷ÿ÷√"/>		
-	</s:form>
+<div style="width: 100%;">
+    <s:form action="addLyAction" method="post" theme="simple">
+        <table style="width: 100%;border: 0;border-spacing: 0;padding: 0;">
+            <tr>
+                <td class="title-bar">
+                    <table style="width: 100%;border-spacing: 0;padding: 0;">
+                        <tr>
+                            <td style="width: 26px" class="title-bar-title-icon">&nbsp;</td>
+                            <td style="width: 745px" class="title-bar-text">Ê∑ªÂä†ÁïôË®Ä</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%;border-spacing: 0;padding: 0;text-align: center;margin: 100px 0 0 0;" id="p1">
+            <tr>
+                <td style="width: 24%;height: 24px;background-color: rgb(239,246,254);" class="table-frame-input-title">
+                    ÁïôË®ÄÊ†áÈ¢ò
+                </td>
+                <td style="height: 24px;background-color: rgb(239,246,254);" class="table-cell-input">
+                    <s:textfield name="ly.title" cssClass="form-input" size="100"/>
+                    <s:hidden name="ly.id"/>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 24%;height: 350px;line-height: 22;background-color: rgb(239,246,254);"
+                    class="table-frame-input-title">ÁïôË®ÄÂÜÖÂÆπ
+                </td>
+                <td style="height: 350px;background-color: rgb(239,246,254);" class="table-cell-input">
+                    <s:textarea rows="24" cols="100" name="ly.lyContent"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 99%;border-spacing: 0;padding: 0;text-align: center;border:0;">
+            <tr>
+                <td class="buttun-bar">
+                    <s:submit value="Êèê‰∫§" cssClass="form-buttun"/>
+                    <s:reset value="ÈáçÁΩÆ" cssClass="form-buttun"/>
+                </td>
+            </tr>
+        </table>
+    </s:form>
+</div>
+<div>
+    <br/>
+    &nbsp;<s:label name="titleErr" style="color:red;"/>
+    &nbsp;<p name="titleErr" style="color:red;"></p>
+    <br/>
+    <br/>
+    &nbsp;<s:label name="lyContentErr" style="color:red;"/>
+</div>
 </body>
 </html>
-

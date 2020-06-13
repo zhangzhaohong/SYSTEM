@@ -1,90 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans
-		xmlns="http://www.springframework.org/schema/beans"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.springframework.org/schema/beans"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="sessionFactory"
-		  class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-		<property name="configLocation"
-				  value="classpath:hibernate.cfg.xml">
-		</property>
-	</bean>
-	<bean id="baseDAO" class="com.project.pro.dao.BaseDAO" abstract="false"
-		  lazy-init="default" autowire="default">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-	<bean id="userTableDAO"
-		  class="com.project.pro.dao.impl.UserTableDAO" parent="baseDAO"
-		  abstract="false" lazy-init="default" autowire="default">
-	</bean>
-	<bean id="loginValidateAction"
-		  class="com.project.pro.action.LoginValidateAction" abstract="false"
-		  lazy-init="default" autowire="default">
-		<property name="userService" ref="userService"/>
-	</bean>
-	<bean id="lyTableDAO" class="com.project.pro.dao.impl.LyTableDAO"
-		  parent="baseDAO" abstract="false" lazy-init="default"
-		  autowire="default">
-	</bean>
-	<bean id="mainAction"
-		  class="com.project.pro.action.LyMainAction" abstract="false"
-		  lazy-init="default" autowire="default">
-	</bean>
-	<bean id="userInfoDAO" class="com.project.pro.dao.impl.UserInfoDAO"
-		  parent="baseDAO" abstract="false" lazy-init="default"
-		  autowire="default">
-	</bean>
-	<bean id="modifyUserInfo"
-		  class="com.project.pro.action.ModifyUserInfo" abstract="false"
-		  lazy-init="default" autowire="default">
-	</bean>
-	<bean id="addLyAction" class="com.project.pro.action.AddLyAction"
-		  abstract="false" lazy-init="default" autowire="default">
-	</bean>
-	<bean id="regUserAction"
-		  class="com.project.pro.action.LoginValidateAction" init-method="register" abstract="false"
-		  lazy-init="default" autowire="default">
-	</bean>
-	<bean id="userService"
-		  class="com.project.pro.service.impl.UserTableService">
-		<property name="userDAO" ref="userTableDAO"/>
-	</bean>
-	<!-- ========================================================================================================== -->
-	<bean id="signInDao" class="com.project.org.dao.imp.SignInDaoImp" parent="baseDAO"/>
-	<bean id="signInService" class="com.project.org.service.imp.SignInServiceManage">
-		<property name="signInDao" ref="signInDao"/>
-	</bean>
-	<bean id="signIn" class="com.project.org.action.SignInAction">
-		<property name="signInService" ref="signInService"/>
-	</bean>
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="configLocation"
+                  value="classpath:hibernate.cfg.xml">
+        </property>
+    </bean>
+    <bean id="baseDAO" class="com.project.pro.dao.BaseDAO">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <bean id="userTableDAO" class="com.project.pro.dao.impl.UserTableDAO" parent="baseDAO">
+    </bean>
+    <bean id="loginValidateAction" class="com.project.pro.action.LoginValidateAction">
+        <property name="userService" ref="userService"/>
+    </bean>
+    <bean id="lyTableDAO" class="com.project.pro.dao.impl.LyTableDAO" parent="baseDAO">
+    </bean>
+    <bean id="mainAction" class="com.project.pro.action.LyMainAction">
+    </bean>
+    <bean id="userInfoDAO" class="com.project.pro.dao.impl.UserInfoDAO" parent="baseDAO">
+    </bean>
+    <bean id="modifyUserInfo" class="com.project.pro.action.ModifyUserInfo">
+    </bean>
+    <bean id="addLyAction" class="com.project.pro.action.AddLyAction">
+    </bean>
+    <bean id="regUserAction" class="com.project.pro.action.RegUserAction">
+    </bean>
+    <bean id="userService" class="com.project.pro.service.impl.UserTableService">
+        <property name="userDAO" ref="userTableDAO"/>
+    </bean>
+    <!-- ========================================================================================================== -->
+    <bean id="signInDao" class="com.project.org.dao.imp.SignInDaoImp" parent="baseDAO"/>
+    <bean id="signInService" class="com.project.org.service.imp.SignInServiceManage">
+        <property name="signInDao" ref="signInDao"/>
+    </bean>
+    <bean id="signIn" class="com.project.org.action.SignInAction">
+        <property name="signInService" ref="signInService"/>
+    </bean>
 
-	<bean id="studentDao" class="com.project.org.dao.imp.StudentDaoImp" parent="baseDAO"/>
-	<bean id="majorDao" class="com.project.org.dao.imp.MajorDaoImp" parent="baseDAO"/>
-	<bean id="studentService" class="com.project.org.service.imp.StudentServiceManage">
-		<property name="studentDao" ref="studentDao"/>
-	</bean>
-	<bean id="majorService" class="com.project.org.service.imp.MajorServiceManage">
-		<property name="majorDao" ref="majorDao"/>
-	</bean>
-	<bean id="student" class="com.project.org.action.StudentAction">
-		<property name="studentService" ref="studentService"/>
-		<property name="majorService" ref="majorService"/>
-	</bean>
+    <bean id="studentDao" class="com.project.org.dao.imp.StudentDaoImp" parent="baseDAO"/>
+    <bean id="majorDao" class="com.project.org.dao.imp.MajorDaoImp" parent="baseDAO"/>
+    <bean id="studentService" class="com.project.org.service.imp.StudentServiceManage">
+        <property name="studentDao" ref="studentDao"/>
+    </bean>
+    <bean id="majorService" class="com.project.org.service.imp.MajorServiceManage">
+        <property name="majorDao" ref="majorDao"/>
+    </bean>
+    <bean id="student" class="com.project.org.action.StudentAction">
+        <property name="studentService" ref="studentService"/>
+        <property name="majorService" ref="majorService"/>
+    </bean>
 
-	<bean id="classesDao" class="com.project.org.dao.imp.ClassesDaoImp" parent="baseDAO"/>
-	<bean id="successDao" class="com.project.org.dao.imp.SuccessDaoImp" parent="baseDAO"/>
-	<bean id="classesService" class="com.project.org.service.imp.ClassesServiceManage">
-		<property name="classesDao" ref="classesDao"/>
-	</bean>
-	<bean id="successService" class="com.project.org.service.imp.SuccessServiceManage">
-		<property name="successDao" ref="successDao"/>
-	</bean>
-	<bean id="success" class="com.project.org.action.SuccessAction">
-		<property name="studentService" ref="studentService"/>
-		<property name="classesService" ref="classesService"/>
-		<property name="successService" ref="successService"/>
-	</bean>
+    <bean id="classesDao" class="com.project.org.dao.imp.ClassesDaoImp" parent="baseDAO"/>
+    <bean id="successDao" class="com.project.org.dao.imp.SuccessDaoImp" parent="baseDAO"/>
+    <bean id="classesService" class="com.project.org.service.imp.ClassesServiceManage">
+        <property name="classesDao" ref="classesDao"/>
+    </bean>
+    <bean id="successService" class="com.project.org.service.imp.SuccessServiceManage">
+        <property name="successDao" ref="successDao"/>
+    </bean>
+    <bean id="success" class="com.project.org.action.SuccessAction">
+        <property name="studentService" ref="studentService"/>
+        <property name="classesService" ref="classesService"/>
+        <property name="successService" ref="successService"/>
+    </bean>
 </beans>

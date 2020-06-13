@@ -5,7 +5,7 @@
   Time: 16:59
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" pageEncoding="gb2312" import="java.sql.*" %>
+<%@ page language="java" pageEncoding="gb2312" import="java.sql.ResultSet" %>
 <jsp:useBean id="SqlSrvDB" scope="page" class="com.project.pro.jdbc.SqlSrvDBConn"/>
 <html>
 <head>

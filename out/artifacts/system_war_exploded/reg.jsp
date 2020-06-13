@@ -10,10 +10,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>用户注册</title>
     <style type="text/css">
-        body{
+        body {
             background: url(./images/login-bg.jpeg);
         }
     </style>
@@ -38,7 +38,8 @@
         </tr>
         <tr>
             <td width="150" align="right">确认密码：</td>
-            <td width="220"><input type="password" name="rewritePassword" id="rewritePassword" placeholder="请再次输入密码"/></td>
+            <td width="220"><input type="password" name="rewritePassword" id="rewritePassword" placeholder="请再次输入密码"/>
+            </td>
         </tr>
         <tr>
             <td width="100" align="center">用户类型：</td>
@@ -50,7 +51,7 @@
         <tr>
             <td colspan="2" align="center">
                 <s:submit value="注册"/>&nbsp;&nbsp;
-                <input type="reset" name="" value="重置" />&nbsp;&nbsp;
+                <input type="reset" name="" value="重置"/>&nbsp;&nbsp;
             </td>
         </tr>
     </table>

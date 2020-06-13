@@ -1,58 +1,61 @@
 @CHARSET "UTF-8";
 
 * {
-	margin: 0
+    margin: 0
 }
 
 table, th, tr, td {
-	text-align: center;
-	vertical-align: center !important;
+    text-align: center;
+    vertical-align: center !important;
 }
 
 caption {
-	background-image: url(../images/oper_title_bar_bg.gif);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	text-align: center;
-	caption-side: top;
-	font-size: 18px;
-	font-weight: 900;
-	height: 40px;
-	color: white;
-	padding: 8px;
+    background-image: url(../images/oper_title_bar_bg.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    caption-side: top;
+    font-size: 18px;
+    font-weight: 900;
+    height: 40px;
+    color: white;
+    padding: 8px;
 }
+
 .userinfo_title {
-	background-image: url(../images/oper_title_bar_bg2.gif);
-	background-size:100% 100%;	
-	line-height:32px;
+    background-image: url(../images/oper_title_bar_bg2.gif);
+    background-size: 100% 100%;
+    line-height: 32px;
 }
-.userinfo_title .btn-group{
-	margin-left:-102px
+
+.userinfo_title .btn-group {
+    margin-left: -102px
 }
+
 .userinfo_name,
 .userinfo_name::-webkit-input-placeholder {
-	color: red;
-	font-weight: bold;
-	font-size: 20px
+    color: red;
+    font-weight: bold;
+    font-size: 20px
 }
 
 .userinfo_name::-moz-placeholder {
-	/* Mozilla Firefox 19+ */
-	color: red;
-	font-weight: bold;
-	font-size: 20px
+    /* Mozilla Firefox 19+ */
+    color: red;
+    font-weight: bold;
+    font-size: 20px
 }
 
 .userinfo_name:-moz-placeholder {
-	/* Mozilla Firefox 4 to 18 */
-	color: red;
-	font-weight: bold;
-	font-size: 20px
+    /* Mozilla Firefox 4 to 18 */
+    color: red;
+    font-weight: bold;
+    font-size: 20px
 }
 
 .userinfo_name:-ms-input-placeholder {
-	/* Internet Explorer 10-11 */
-	color: red;
-	font-weight: bold;
-	font-size: 20px
+    /* Internet Explorer 10-11 */
+    color: red;
+    font-weight: bold;
+    font-size: 20px
 }
