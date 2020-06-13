@@ -37,7 +37,7 @@ public class ClassesDaoImp extends BaseDAO implements ClassesDao{
 			query.setMaxResults(1);
 			Classes cla=(Classes)query.uniqueResult();
 			ts.commit();
-			session.clear();			// �������
+			session.clear();
 			return cla;
 		}catch(Exception e){
 			e.printStackTrace();

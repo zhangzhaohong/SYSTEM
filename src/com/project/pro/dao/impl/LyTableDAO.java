@@ -19,21 +19,25 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
     @Override
     public int getCountRec(String filter, String order, String searchType, String searchCon) {
         Session session = getSession();
+        session.clear();
         String hql = "from LyTable ";
         hql = hql + dataFilter(filter, order, searchType, searchCon);
         Query qu = session.createQuery(hql);
         int num = qu.list().size();
+        closeSession(session);
         return num;
     }
 
     @Override
     public List<LyTable> getLyList(int startR, int ReNum, String filter, String order, String searchType, String searchCon) {
         Session session = getSession();
+        session.clear();
         String hql = "from LyTable ";
         hql = hql + dataFilter(filter, order, searchType, searchCon);
         Query qu = session.createQuery(hql);
         qu.setFirstResult(startR);
         qu.setMaxResults(ReNum);
+        closeSession(session);
         return qu.list();
     }
 
@@ -133,6 +137,7 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
     @Override
     public int save(LyTable ly) {
         Session session = getSession();
+        session.clear();
         Transaction ts = session.beginTransaction();
         int sucNum;
         if (ly.getId() == null || ly.getId() == 0) {
@@ -149,26 +154,30 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
         }
 //		int sucNum = (Integer)session.save(ly);
 //		ts.commit();
-        closeSession();
+        closeSession(session);
         return sucNum;
     }
 
     @Override
     public LyTable getOneLy(int id) {
         Session session = getSession();
+        session.clear();
         String hql = "from LyTable where id=" + id;
         Query qu = session.createQuery(hql);
         qu.setMaxResults(1);
-        return (LyTable) qu.uniqueResult();
+        LyTable result = (LyTable) qu.uniqueResult();
+        closeSession(session);
+        return result;
     }
 
     @Override
     public int delete(LyTable ly) {
         Session session = getSession();
+        session.clear();
         Transaction transaction = session.beginTransaction();
         session.delete(ly);
         transaction.commit();
-        closeSession();
+        closeSession(session);
         return 0;
     }
 
