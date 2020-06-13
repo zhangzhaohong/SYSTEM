@@ -15,25 +15,22 @@ public class UserTableDAO extends BaseDAO implements IUserTableDAO {
 
     @Override
     public Test validatTest(String username, String userpwd, String usertype) {
+        Test result = null;
         //String hql = "from Test where username=? and userpwd=? and usertype=?";
         String hql = "from Test where username=?1 and userpwd=?2 and usertype=?3";
         //String hql = "select * from `test` where username='" + username + "' and userpwd='" + userpwd + "' and usertype='" + usertype + "'";
         new LogUtil().printLn(hql);
-
         Query query = getSession()
                 .createQuery(hql);
-
         List users = query
                 .setParameter(1, username)
                 .setParameter(2, userpwd)
                 .setParameter(3, usertype)
                 .getResultList();
-
         if (users.size() > 0) {
-            return (Test) users.get(0);
+            result = (Test) users.get(0);
         }
-
-        return null;
+        return result;
     }
 
     @Override
@@ -41,23 +38,17 @@ public class UserTableDAO extends BaseDAO implements IUserTableDAO {
         Session session = getSession();
         Transaction ts = session.beginTransaction();
         int sucNum = (Integer) session.save(session.merge(user));
-
         ts.commit();
-
         HibernateSessionFactory.closeSession();
-
         return sucNum;
     }
 
     @Override
     public boolean isExistUser(String username) {
-        String hql = "from Test where username=?";
+        String hql = "from Test where username=?1";
         Query qu = getSession().createQuery(hql);
-
-        qu.setString(0, username);
-
+        qu.setParameter(1, username);
         List users = qu.list();
-
         if (users.size()>0) {
             return true;
         }else {

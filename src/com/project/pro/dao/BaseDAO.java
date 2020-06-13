@@ -7,6 +7,8 @@ public class BaseDAO {
 	
 	private SessionFactory sessionFactory;
 
+	private Session session;
+
 	public SessionFactory getSessionFactory() {
 		return sessionFactory;
 	}				
@@ -16,7 +18,7 @@ public class BaseDAO {
 	}
 	
 	public Session getSession(){
-		Session session = sessionFactory.openSession();
+		session = sessionFactory.openSession();
 		return session;
 	}
 	

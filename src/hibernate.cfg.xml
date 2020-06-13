@@ -14,7 +14,9 @@
         <property name="hibernate.connection.password">root</property>
         <!--            数据库方法配置， hibernate在运行的时候，会根据不同的方言生成符合当前数据库语法的sql         -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-
+        <property name="hibernate.proxool.pool_alias">DBPool</property>
+        <property name="hibernate.proxool.xml">proxool.xml</property>
+        <property name="connection.release_mode">after_transaction</property>
         <!-- 2. 其他相关配置 -->
         <!-- 2.1 显示hibernate在运行时候执行的sql语句 -->
         <property name="hibernate.show_sql">true</property>
