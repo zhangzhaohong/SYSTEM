@@ -41,8 +41,7 @@
                 class="com.project.pro.action.LogoutAction">
             <result name="success">/oper_info.jsp</result>
         </action>
-        <action name="modifyUserInfo"
-                class="modifyUserInfo">
+        <action name="modifyUserInfo" class="modifyUserInfo">
             <result name="success">/modify_user_info.jsp</result>
             <result name="main" type="dispatcher">/main.jsp</result>
         </action>

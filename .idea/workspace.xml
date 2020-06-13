@@ -8,14 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="481a650c-8dd9-4c4a-bf03-bdca5d572444" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/BaseDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/ClassesDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/ClassesDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/MajorDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/MajorDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/SignInDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/SignInDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/StudentDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/StudentDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/AddLyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/AddLyAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/BaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/impl/UserTableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/impl/UserTableDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/CheckUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/CheckUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/SuccessDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/SuccessDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/ModifyUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/ModifyUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +194,7 @@
       <workItem from="1592030386721" duration="7744000" />
       <workItem from="1592038216502" duration="1410000" />
       <workItem from="1592039947093" duration="6187000" />
-      <workItem from="1592058936011" duration="4551000" />
+      <workItem from="1592058936011" duration="5228000" />
     </task>
     <servers />
   </component>
