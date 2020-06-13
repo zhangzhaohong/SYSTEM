@@ -28,7 +28,7 @@
 	</bean>
 	<bean id="addLyAction" class="com.project.pro.action.AddLyAction">
 	</bean>
-	<bean id="regUserAction" class="com.project.pro.action.LoginValidateAction" init-method="register">
+	<bean id="regUserAction" class="com.project.pro.action.RegUserAction">
 	</bean>
 	<bean id="userService" class="com.project.pro.service.impl.UserTableService">
 		<property name="userDAO" ref="userTableDAO"/>

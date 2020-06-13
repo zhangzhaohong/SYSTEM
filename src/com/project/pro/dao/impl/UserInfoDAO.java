@@ -20,9 +20,7 @@ public class UserInfoDAO extends BaseDAO implements IUserInfoDAO {
 		qu.setMaxResults(1);
 		if (qu.list().size()>0) {
 			Test test = (Test)qu.uniqueResult();
-			
-			return test.getUserinfo();		
-			
+			return test.getUserinfo();
 		}
 		return null;
 	}

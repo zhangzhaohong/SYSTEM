@@ -7,12 +7,14 @@ import com.project.pro.vo.Test;
 import com.project.pro.vo.UserTable;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.ContextLoader;
 
 /**
  * ZHANGZHAOHONG 2018128338
  * */
 public class RegUserAction extends ActionSupport {
 
+    ApplicationContext ac;
     private Test user;
     private String nameregErr;
     private String pwdregErr;
@@ -99,7 +101,9 @@ public class RegUserAction extends ActionSupport {
             return ERROR;
         }
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ac = ContextLoader.getCurrentWebApplicationContext();
+        if (ac == null) ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         IUserTableDAO userDao = (IUserTableDAO)ac.getBean("userTableDAO");		//new UserTableDAO();
 

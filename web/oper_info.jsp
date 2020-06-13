@@ -19,17 +19,17 @@
 		   <td style="padding:10px 20%;">
 				<table style="background-color: white;" class="table table-bordered">	
 					<tr>
-						<td style="width: 156;height: 20;text-align: content;color:blue;">操作:</td>
-						<td style="height: 20;text-align: content;">${action }</td>
+						<td style="width: 156px;height: 20px;text-align: center;color:blue;">操作:</td>
+						<td style="height: 20px;text-align: center;">${action}</td>
 					</tr>
 					<tr>
-						<td style="height: 20;text-align: content;color:blue;">提示信息:</td><
-						<td style="height: 20;text-align: content;">${oper_info }</td>
+						<td style="height: 20px;text-align: center;color:blue;">提示信息:</td><
+						<td style="height: 20px;text-align: center;">${oper_info }</td>
 					</tr>
 					<c:if var="nextOper" test="${next_url!=null}">
 						<tr>
-							<td style="width: 156;height: 20;text-align: content;color:blue;">下一步:</td>
-							<td style="height: 20;text-align: content;color:orange;">
+							<td style="width: 156px;height: 20px;text-align: center;color:blue;">下一步:</td>
+							<td style="height: 20px;text-align: center;color:orange;">
 								正在转向${next_info }......	
 								<script type="text/javascript">
 									onload=function(){ 
