@@ -32,7 +32,7 @@ public class BaseDAO {
             session.close();
             sessionFactory.close();
         } catch (Exception e) {
-        	new LogUtil().printLn(e.toString());
+            new LogUtil().printLn(e.toString());
         }
     }
 

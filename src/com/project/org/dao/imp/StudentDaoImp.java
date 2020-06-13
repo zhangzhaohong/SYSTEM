@@ -2,94 +2,101 @@ package com.project.org.dao.imp;
 
 import com.project.org.dao.BaseDAO;
 import com.project.org.dao.StudentDao;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import com.project.org.model.Student;
+import org.hibernate.query.Query;
 
 import java.util.List;
 
 public class StudentDaoImp extends BaseDAO implements StudentDao{
 	public List findAll(int pageNow, int pageSize){
+		Session session=getSession();
+		List list = null;
 		try{
-			Session session=getSession();
+			session.clear();
 			Transaction ts=session.beginTransaction();
 			Query query=session.createQuery("from Student order by sno");
 			int firstResult=(pageNow-1)*pageSize;
 			query.setFirstResult(firstResult);
 			query.setMaxResults(pageSize);
-			List list=query.list();
+			list=query.list();
 			ts.commit();
-			session.close();
-			session=null;
-			return list;
 		}catch(Exception e){
 			e.printStackTrace();
-			return null;
 		}
+		closeSession(session);
+		return list;
 	}
 	public int findstudentSize(){
+		Session session=getSession();
+		int num = 0;
 		try{
-			Session session=getSession();
+			session.clear();
 			Transaction ts=session.beginTransaction();
-			return session.createQuery("from Student").list().size();			
+			num = session.createQuery("from Student").list().size();
 		}catch(Exception e){
 			e.printStackTrace();
-			return 0;
 		}
+		closeSession(session);
+		return num;
 	}
 
 	public Student find(String sno){
+		Session session=getSession();
+		Student student = null;
 		try{
-			Session session=getSession();
+			session.clear();
 			Transaction ts=session.beginTransaction();
 			Query query=session.createQuery("from Student where sno=?");
 			query.setParameter(0, sno);
 			query.setMaxResults(1);
-			Student student=(Student)query.uniqueResult();
+			student=(Student)query.uniqueResult();
 			ts.commit();
-			session.clear();
-			return student;
 		}catch(Exception e){
 			e.printStackTrace();
-			return null;
-		}		
+		}
+		closeSession(session);
+		return student;
 	}
 
 	public void delete(String sno){
+		Session session=getSession();
 		try{
-			Session session=getSession();
+			session.clear();
 			Transaction ts=session.beginTransaction();
 			Student student=find(sno);
 			session.delete(student);
 			ts.commit();
-			session.close();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		closeSession(session);
 	}
 
 	public void update(Student student){
+		Session session=getSession();
 		try{
-			Session session=getSession();
+			session.clear();
 			Transaction ts=session.beginTransaction();
 			session.update(student);
 			ts.commit();
-			session.close();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		closeSession(session);
 	}
 
 	public void save(Student student){
+		Session session=getSession();
 		try{
-			Session session=getSession();
+			session.clear();
 			Transaction ts=session.beginTransaction();
 			session.save(student);
 			ts.commit();
-			session.close();
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		closeSession(session);
 	}
 }

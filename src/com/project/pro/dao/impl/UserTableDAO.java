@@ -3,7 +3,6 @@ package com.project.pro.dao.impl;
 import com.project.LogUtil;
 import com.project.pro.dao.BaseDAO;
 import com.project.pro.dao.IUserTableDAO;
-import com.project.pro.factory.HibernateSessionFactory;
 import com.project.pro.vo.Test;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

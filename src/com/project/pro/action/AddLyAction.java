@@ -2,9 +2,7 @@ package com.project.pro.action;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-import com.project.LogUtil;
 import com.project.pro.dao.ILyTableDAO;
-import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
 import com.project.pro.vo.Test;
 import org.apache.struts2.ServletActionContext;
@@ -18,28 +16,33 @@ import java.util.Map;
 
 /**
  * ZHANGZHAOHONG 2018128338
- * */
+ */
 public class AddLyAction extends ActionSupport {
+    ApplicationContext ac;
     private LyTable ly;
     private String titleErr;
     private String lyContentErr;
-    ApplicationContext ac;
 
     public String getTitleErr() {
         return titleErr;
     }
+
     public void setTitleErr(String titleErr) {
         this.titleErr = titleErr;
     }
+
     public String getLyContentErr() {
         return lyContentErr;
     }
+
     public void setLyContentErr(String lyContentErr) {
         this.lyContentErr = lyContentErr;
     }
+
     public LyTable getLy() {
         return ly;
     }
+
     public void setLy(LyTable ly) {
         this.ly = ly;
     }
@@ -48,13 +51,12 @@ public class AddLyAction extends ActionSupport {
     public void validate() {
         String title = ly.getTitle();
         String content = ly.getLyContent();
-        if (title==null || "".equals(title)){
+        if (title == null || "".equals(title)) {
             //保存错误信息
-            super.addFieldError("title","数据不能为空！");
+            super.addFieldError("title", "数据不能为空！");
         }
-
-        if (content==null || "".equals(content)){
-            super.addFieldError("content","数据不能为空");
+        if (content == null || "".equals(content)) {
+            super.addFieldError("content", "数据不能为空！");
         }
     }
 
@@ -64,63 +66,44 @@ public class AddLyAction extends ActionSupport {
     public String execute() {
         ac = ContextLoader.getCurrentWebApplicationContext();
         if (ac == null) ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-
         Map session = ActionContext.getContext().getSession();
-
         Test user = (Test) session.get("user");
-        if(user==null){
+        if (user == null) {
             return "loginerr";
         }
-
         HttpServletRequest request = ServletActionContext.getRequest();
-
         String id = request.getParameter("id");
         String method = request.getMethod();
         if (method.equalsIgnoreCase("get")) {
-
-            ILyTableDAO lyDao = (ILyTableDAO)ac.getBean("lyTableDAO");		//new LyTableDAO();
-
-
-
+            ILyTableDAO lyDao = (ILyTableDAO) ac.getBean("lyTableDAO");        //new LyTableDAO();
             ly = lyDao.getOneLy(Integer.parseInt(id));
             return "modify";
-
-        }else {
-            ILyTableDAO lyDao = (ILyTableDAO)ac.getBean("lyTableDAO");		//new LyTableDAO();
-
+        } else {
+            ILyTableDAO lyDao = (ILyTableDAO) ac.getBean("lyTableDAO");        //new LyTableDAO();
             String type = request.getParameter("type");
-            if (type!=null && type.equalsIgnoreCase("delete")) { 	//也可以('delete'.equalsIgnoreCase(type))
-
+            if (type != null && type.equalsIgnoreCase("delete")) {    //也可以('delete'.equalsIgnoreCase(type))
                 String delid = request.getParameter("delid");
-                if (ly==null) {
+                if (ly == null) {
                     ly = new LyTable();
                 }
                 ly.setId(Integer.parseInt(delid));
                 lyDao.delete(ly);
-
                 return "delsucc";
-
             }
-
-            if (ly==null) {
+            if (ly == null) {
                 return "error";
             }
             Date lydate = new Date(System.currentTimeMillis());
             ly.setTest(user);
             ly.setLydate(lydate);
-
             int num = lyDao.save(ly);
-
-            if(num>0){
-
+            if (num > 0) {
                 request.setAttribute("action", "添加留言");
                 request.setAttribute("oper_info", "添加留言成功");
                 request.setAttribute("next_info", "留言列表页");
                 request.setAttribute("next_url", "pageLy.action");
-
                 return SUCCESS;
-
-            }else {
+            } else {
                 return ERROR;
             }
         }

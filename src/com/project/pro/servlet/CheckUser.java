@@ -19,18 +19,13 @@ public class CheckUser extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		
 		//取得用户填写的学号
 		String username = request.getParameter("username");
 		//设置响应内容
 		String responseContext = "true";
-		
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-		
 		IUserTableDAO userDao = (IUserTableDAO)ac.getBean("userTableDAO");
-		
 		boolean isExist = userDao.isExistUser(username);
-		
 		if (isExist) {
 			responseContext = "false";
 		}
@@ -38,14 +33,11 @@ public class CheckUser extends HttpServlet{
 		out.println(responseContext);
 		out.flush();
 		out.close();
-		
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-	
-	
-	
+
 }
