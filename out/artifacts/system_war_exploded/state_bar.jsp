@@ -1,0 +1,17 @@
+<%@ page contentType="text/html; charset=gb2312"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Ly_state_bar</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/state_bar.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table style="width:100% " class="state-bar">
+  <tr>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>

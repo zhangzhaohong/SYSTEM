@@ -20,7 +20,7 @@ function titleBarShowOrHide(objID){
 	var linkTable = document.getElementById(objID);
 	var obj = document.getElementById(objID + "_btn");
 	if(obj){
-		if(obj.style.display=="" || obj.style.display=="block"){	//181软件3  罗人浩
+		if(obj.style.display=="" || obj.style.display=="block"){
 			//obj.className = "title-bar2-btn-col";
 			obj.style.display="none";
 		}else{
@@ -67,7 +67,7 @@ function checkAll(form){
 			e.checked = eSource.checked;
 		}
 	}
-}//181软件3 罗人浩
+}
 function dataFilter(search_param_name){
 	var e =event.srcElement.parentNode;
 	var tmp = removeSearch("URL",search_param_name);
@@ -118,7 +118,7 @@ function addSearch(searchStr,name,value){
 	return searchManage(searchStr,"add",name,value);
 }
 function pageJump(){
-	var e = event.srcElement;//181软件3 罗人浩
+	var e = event.srcElement;
 	var search = addSearch("URL","page",e.value);
 	mangeUrlLoad(search);
 }
@@ -152,7 +152,7 @@ function next_page(pageCount){
 	mangeUrlLoad(search);
 }
 function prev_page(){
-	var pn = getSearchValue("URL","page");//181软件3 罗人浩
+	var pn = getSearchValue("URL","page");
 	if (pn == "" ||pn == null){
 		first_page();
 		return;
@@ -186,7 +186,7 @@ function getSearchValue(searchStrparam,name){
 			if(searchArray[i] != ""){
 				var paramArray = new Array();
 				paramArray = searchArray[i].split("=");
-				if(paramArray[0] == name){//181软件3 罗人浩
+				if(paramArray[0] == name){
 					returnStr = paramArray[1];
 					return returnStr;
 				}

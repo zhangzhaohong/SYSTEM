@@ -5,7 +5,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.project.LogUtil;
 import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
-import com.project.pro.vo.UserTable;
+import com.project.pro.vo.Test;
 
 import java.sql.Date;
 import java.util.Map;
@@ -35,7 +35,7 @@ public class AddLyAction extends ActionSupport {
      */
     public String execute() {
         Map session = ActionContext.getContext().getSession();
-        UserTable user = (UserTable) session.get("user");
+        Test user = (Test) session.get("user");
         if (user == null) {
             return "loginerr";
         }

@@ -49,4 +49,20 @@ public class UserTableDAO extends BaseDAO implements IUserTableDAO {
         return sucNum;
     }
 
+    @Override
+    public boolean isExistUser(String username) {
+        String hql = "from Test where username=?";
+        Query qu = getSession().createQuery(hql);
+
+        qu.setString(0, username);
+
+        List users = qu.list();
+
+        if (users.size()>0) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
 }

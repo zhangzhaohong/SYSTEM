@@ -7,35 +7,44 @@
 <struts>
     <package name="default" extends="struts-default">
         <action name="loginValidateAction"
-                class="com.project.pro.action.LoginValidateAction">
+                class="loginValidateAction">
             <result name="success" type="redirectAction">
                 <param name="actionName">mainAction</param>
-                <param name="supressEmptyParameters">true</param>
             </result>
-            <result name="error">/error.jsp</result>
-            <result name="input">/inputError.jsp</result>
+            <result name="error">/oper_info.jsp</result>
+            <result name="input">/login.jsp</result>
         </action>
-
-        <action name="mainAction"
-                class="com.project.pro.action.LyMainAction">
-            <result name="success">/main.jsp</result>
+        <action name="mainAction" class="mainAction">
+            <result name="success">/frmMain.jsp</result>
         </action>
         <action name="addLyAction"
-                class="com.project.pro.action.AddLyAction">
-            <result name="success" type="redirectAction">
-                <param name="actionName">mainAction</param>
-            </result>
+                class="addLyAction">
+            <result name="success">/oper_info.jsp</result>
             <result name="error">/error.jsp</result>
             <result name="loginerr" type="dispatcher">
                 /login.jsp
             </result>
-            <result name="input">/inputError.jsp</result>
+            <result name="input">/liuyan.jsp</result>
+            <result name="modify">/liuyan.jsp</result>
+            <result name="delsucc" type="redirectAction">pageLy</result>
         </action>
-        <action name="regUserAction"
-                class="com.project.pro.action.RegUserAction">
+        <action name="regUserAction" class="regUserAction">
             <result name="success">/login.jsp</result>
             <result name="error">/error.jsp</result>
-            <result name="input">/inputError.jsp</result>
+            <result name="input">/reg.jsp</result>
+        </action>
+        <action name="pageLy"
+                class="mainAction">
+            <result type="dispatcher" name="success">/main.jsp</result>
+        </action>
+        <action name="userLogout"
+                class="com.project.pro.action.LogoutAction">
+            <result name="success">/oper_info.jsp</result>
+        </action>
+        <action name="modifyUserInfo"
+                class="modifyUserInfo">
+            <result name="success">/modify_user_info.jsp</result>
+            <result name="main" type="dispatcher">/main.jsp</result>
         </action>
     </package>
     <constant name="struts.i18n.encoding" value="GB2312"/>

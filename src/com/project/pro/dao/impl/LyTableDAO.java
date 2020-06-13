@@ -14,36 +14,39 @@ import java.sql.Date;
 import java.util.Calendar;
 import java.util.List;
 
+import static com.project.pro.factory.HibernateSessionFactory.closeSession;
+import static com.project.pro.factory.HibernateSessionFactory.getSession;
+
 public class LyTableDAO extends BaseDAO implements ILyTableDAO {
 
 	@Override
 	public int getCountRec(String filter,String order,String searchType,String searchCon) {
 		Session session = getSession();
-    	String hql = "from LyTable ";
-    	hql = hql + dataFilter(filter,order,searchType,searchCon);
-    	Query qu = session.createQuery(hql);
-    	return qu.list().size();
+		String hql = "from LyTable ";
+		hql = hql + dataFilter(filter,order,searchType,searchCon);
+		Query qu = session.createQuery(hql);
+		return qu.list().size();
 	}
 
 	@Override
 	public List<LyTable> getLyList(int startR, int ReNum, String filter, String order, String searchType, String searchCon) {
 		Session session = getSession();
-    	String hql = "from LyTable ";
+		String hql = "from LyTable ";
 		hql = hql + dataFilter(filter,order,searchType,searchCon);
-    	Query qu = session.createQuery(hql);
+		Query qu = session.createQuery(hql);
 		qu.setFirstResult(startR);
-    	qu.setMaxResults(ReNum);
-    	return qu.list();
+		qu.setMaxResults(ReNum);
+		return qu.list();
 	}
 
 	private String dataFilter(String filter,String order,String searchType,String searchCon) {
-		
+
 		String whereHql = "";
-		
+
 		if (!(filter==null || filter.equals(""))) {
 			if (filter.equalsIgnoreCase("myedded")) {
-				
-		        Test sessionUser = (Test) ActionContext.getContext().getSession().get("user");
+
+				Test sessionUser = (Test) ActionContext.getContext().getSession().get("user");
 				int id = sessionUser.getId();
 				if (whereHql.equalsIgnoreCase("")) {
 					whereHql = whereHql + " test.id = " + id;
@@ -75,35 +78,35 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
 					whereHql = " and lydate like '" + year + "-" + month + "%'";
 				}
 			}
-			
+
 		}
 		if (!(searchType==null || searchType.equals("") || searchCon==null || searchCon.equals(""))) {
 			if (searchType.equalsIgnoreCase("article_id")) {
-				
+
 				if (whereHql.equalsIgnoreCase("")) {
 					whereHql = whereHql + " id = " + searchCon;
 				}else {
 					whereHql = whereHql + " and id = " + searchCon;
 				}
 			}else if(searchType.equalsIgnoreCase("title")) {
-				
+
 				if (whereHql.equalsIgnoreCase("")) {
 					whereHql = " title like %" + searchCon + "%";
 				}else {
 					whereHql = " and title like %" + searchCon + "%";
 				}
 			}else if (searchType.equalsIgnoreCase("keyword")) {
-				
+
 			}else if(searchType.equalsIgnoreCase("add_user")){
-				
+
 			}else if(searchType.equalsIgnoreCase("add_date")){
-				
+
 			}else if(searchType.equalsIgnoreCase("save_user")){
-				
+
 			}
 		}
 		String orderHql = "";
-		
+
 		if (!(order==null || order.equals(""))) {
 			if (order.equalsIgnoreCase("iddown")) {
 				orderHql = " order by id desc";
@@ -115,7 +118,7 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
 				orderHql = " order by lydate asc";
 			}
 		}
-		
+
 		if (!whereHql.equals("")) {
 			whereHql = " where " + whereHql;
 		}
@@ -135,14 +138,14 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
 	public int save(LyTable ly) {
 		Session session = getSession();
 		Transaction ts = session.beginTransaction();
-		
+
 		int sucNum;
-		
+
 		if (ly.getId() == null || ly.getId() == 0) {
 			sucNum = (Integer) session.save(ly);
 			ts.commit();
 		}else {
-			
+
 			try {
 				session.update(ly);
 				ts.commit();
@@ -151,37 +154,37 @@ public class LyTableDAO extends BaseDAO implements ILyTableDAO {
 				sucNum = 0;
 			}
 		}
-		
+
 //		int sucNum = (Integer)session.save(ly);
 //		ts.commit();
-		
+
 		closeSession();
-		
+
 		return sucNum;
 	}
 
 	@Override
 	public LyTable getOneLy(int id) {
 		Session session = getSession();
-    	String hql = "from Lytable where id="+id;
-    	
-    	Query qu = session.createQuery(hql);
-    	
-    	qu.setMaxResults(1);
-    	return (LyTable)qu.uniqueResult();
+		String hql = "from LyTable where id="+id;
+
+		Query qu = session.createQuery(hql);
+
+		qu.setMaxResults(1);
+		return (LyTable)qu.uniqueResult();
 	}
 
 	@Override
 	public int delete(LyTable ly) {
 		Session session = getSession();
 		Transaction transaction = session.beginTransaction();
-		
+
 		session.delete(ly);
-		
+
 		transaction.commit();
-		
+
 		closeSession();
-		
+
 		return 0;
 	}
 

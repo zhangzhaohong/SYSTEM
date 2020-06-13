@@ -7,5 +7,7 @@ public interface IUserTableDAO {
 	public Test validatTest(String username, String userpwd, String usertype);
 	
 	public int saveUser(Test user);
+
+	public boolean isExistUser(String username);
 	
 }
