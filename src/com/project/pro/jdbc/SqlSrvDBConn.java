@@ -3,9 +3,9 @@ package com.project.pro.jdbc;
 import java.sql.*;
 
 public class SqlSrvDBConn {
+    ResultSet rs;                // ResultSet对象（结果集）
     private Statement stmt;            // Statement对象（语句）
     private Connection conn;        // Connection对象（连接）
-    ResultSet rs;                // ResultSet对象（结果集）
 
     //在构造方法中创建数据库连接
     public SqlSrvDBConn() {

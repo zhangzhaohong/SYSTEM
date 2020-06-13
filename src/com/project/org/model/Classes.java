@@ -6,68 +6,72 @@ package com.project.org.model;
 
 public class Classes implements java.io.Serializable {
 
-	// Fields
+    // Fields
 
-	private String cno;
-	private String cname;
-	private Short openSmt;
-	private Integer chours;
-	private Integer credit;
+    private String cno;
+    private String cname;
+    private Short openSmt;
+    private Integer chours;
+    private Integer credit;
 
-	// Constructors
+    // Constructors
 
-	/** default constructor */
-	public Classes() {
-	}
+    /**
+     * default constructor
+     */
+    public Classes() {
+    }
 
-	/** full constructor */
-	public Classes(String cname, Short openSmt, Integer chours, Integer credit) {
-		this.cname = cname;
-		this.openSmt = openSmt;
-		this.chours = chours;
-		this.credit = credit;
-	}
+    /**
+     * full constructor
+     */
+    public Classes(String cname, Short openSmt, Integer chours, Integer credit) {
+        this.cname = cname;
+        this.openSmt = openSmt;
+        this.chours = chours;
+        this.credit = credit;
+    }
 
-	// Property accessors
+    // Property accessors
 
-	public String getCno() {
-		return this.cno;
-	}
+    public String getCno() {
+        return this.cno;
+    }
 
-	public void setCno(String cno) {
-		this.cno = cno;
-	}
+    public void setCno(String cno) {
+        this.cno = cno;
+    }
 
-	public String getCname() {
-		return this.cname;
-	}
+    public String getCname() {
+        return this.cname;
+    }
 
-	public void setCname(String cname) {
-		this.cname = cname;
-	}
+    public void setCname(String cname) {
+        this.cname = cname;
+    }
 
-	public Short getOpenSmt() {
-		return this.openSmt;
-	}
+    public Short getOpenSmt() {
+        return this.openSmt;
+    }
 
-	public void setOpenSmt(Short openSmt) {
-		this.openSmt = openSmt;
-	}
+    public void setOpenSmt(Short openSmt) {
+        this.openSmt = openSmt;
+    }
 
-	public Integer getChours() {
-		return this.chours;
-	}
+    public Integer getChours() {
+        return this.chours;
+    }
 
-	public void setChours(Integer chours) {
-		this.chours = chours;
-	}
+    public void setChours(Integer chours) {
+        this.chours = chours;
+    }
 
-	public Integer getCredit() {
-		return this.credit;
-	}
+    public Integer getCredit() {
+        return this.credit;
+    }
 
-	public void setCredit(Integer credit) {
-		this.credit = credit;
-	}
+    public void setCredit(Integer credit) {
+        this.credit = credit;
+    }
 
 }

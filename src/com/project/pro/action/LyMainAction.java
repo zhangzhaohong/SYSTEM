@@ -3,28 +3,24 @@ package com.project.pro.action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.project.pro.dao.ILyTableDAO;
-import com.project.pro.jdbc.SqlSrvDBConn;
 import com.project.pro.vo.LyTable;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.context.ContextLoader;
-import org.springframework.web.context.WebApplicationContext;
 
 import javax.servlet.http.HttpServletRequest;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 /**
  * ZHANGZHAOHONG 2018128338
- * */
+ */
 public class LyMainAction extends ActionSupport {
 
     ApplicationContext ac;
+
     /**
      * @return
      */
@@ -47,14 +43,14 @@ public class LyMainAction extends ActionSupport {
         String searchCon = request.getParameter(searchType);
 
         try {
-            ILyTableDAO lyDao = (ILyTableDAO)ac.getBean("lyTableDAO");	//new LyTableDAO();
-            totalRec = lyDao.getCountRec(filter,order,searchType,searchCon);
-            pageCount = (totalRec%pageSize==0)?(totalRec/pageSize):(totalRec/pageSize+1);
-            pageNum = (pageStr==null)?1:Integer.parseInt(pageStr);
-            if(pageNum==0) {
-                pageNum=1;
+            ILyTableDAO lyDao = (ILyTableDAO) ac.getBean("lyTableDAO");    //new LyTableDAO();
+            totalRec = lyDao.getCountRec(filter, order, searchType, searchCon);
+            pageCount = (totalRec % pageSize == 0) ? (totalRec / pageSize) : (totalRec / pageSize + 1);
+            pageNum = (pageStr == null) ? 1 : Integer.parseInt(pageStr);
+            if (pageNum == 0) {
+                pageNum = 1;
             }
-            lyList = lyDao.getLyList((pageNum-1)*pageSize, pageSize,filter,order,searchType,searchCon);
+            lyList = lyDao.getLyList((pageNum - 1) * pageSize, pageSize, filter, order, searchType, searchCon);
         } catch (Exception e) {
             e.printStackTrace();
         }

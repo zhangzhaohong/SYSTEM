@@ -1,11 +1,11 @@
 package com.project.pro.action;
 
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
 import com.project.pro.service.IUserTableService;
 import com.project.pro.vo.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
 import org.springframework.web.context.ContextLoader;
 
 import java.util.Map;
@@ -86,6 +86,10 @@ public class LoginValidateAction extends ActionSupport {
         return user;
     }
 
+    public void setUser(Test user) {
+        this.user = user;
+    }
+
     @Override
     public void validate() {
         if (user.getUsername() == null || user.getUsername().trim().equals("")) {
@@ -96,10 +100,6 @@ public class LoginValidateAction extends ActionSupport {
             pwdErr = "数据不能为空";
             this.addFieldError("", "");
         }
-    }
-
-    public void setUser(Test user) {
-        this.user = user;
     }
 
     /**

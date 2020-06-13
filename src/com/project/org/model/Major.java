@@ -9,73 +9,79 @@ import java.util.Set;
 
 public class Major implements java.io.Serializable {
 
-	// Fields
+    // Fields
 
-	private Integer id;
-	private String majorName;
-	private Integer number;
-	private String instructor;
-	private Set students = new HashSet(0);
+    private Integer id;
+    private String majorName;
+    private Integer number;
+    private String instructor;
+    private Set students = new HashSet(0);
 
-	// Constructors
+    // Constructors
 
-	/** default constructor */
-	public Major() {
-	}
+    /**
+     * default constructor
+     */
+    public Major() {
+    }
 
-	/** minimal constructor */
-	public Major(String majorName) {
-		this.majorName = majorName;
-	}
+    /**
+     * minimal constructor
+     */
+    public Major(String majorName) {
+        this.majorName = majorName;
+    }
 
-	/** full constructor */
-	public Major(String majorName, Integer number, String instructor, Set students) {
-		this.majorName = majorName;
-		this.number = number;
-		this.instructor = instructor;
-		this.students = students;
-	}
+    /**
+     * full constructor
+     */
+    public Major(String majorName, Integer number, String instructor, Set students) {
+        this.majorName = majorName;
+        this.number = number;
+        this.instructor = instructor;
+        this.students = students;
+    }
 
-	// Property accessors
+    // Property accessors
 
-	public Integer getId() {
-		return this.id;
-	}
+    public Integer getId() {
+        return this.id;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public String getMajorName() {
-		return this.majorName;
-	}
+    public String getMajorName() {
+        return this.majorName;
+    }
 
-	public void setMajorName(String majorName) {
-		this.majorName = majorName;
-	}
+    public void setMajorName(String majorName) {
+        this.majorName = majorName;
+    }
 
-	public Integer getNumber() {
-		return this.number;
-	}
+    public Integer getNumber() {
+        return this.number;
+    }
 
-	public void setNumber(Integer number) {
-		this.number = number;
-	}
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
 
-	public String getInstructor() {
-		return this.instructor;
-	}
+    public String getInstructor() {
+        return this.instructor;
+    }
 
-	public void setInstructor(String instructor) {
-		this.instructor = instructor;
-	}
+    public void setInstructor(String instructor) {
+        this.instructor = instructor;
+    }
 
-	public Set getStudents() {
-		return this.students;
-	}
+    public Set getStudents() {
+        return this.students;
+    }
 
-	public void setStudents(Set students) {
-		this.students = students;
-	}
+    public void setStudents(Set students) {
+        this.students = students;
+    }
 
 }

@@ -5,14 +5,15 @@ import com.project.org.model.Student;
 import java.util.List;
 
 public interface StudentDao {
-	public List findAll(int pageNow, int pageSize);
-	public int findstudentSize();
+    List findAll(int pageNow, int pageSize);
 
-	public Student find(String sno);
+    int findstudentSize();
 
-	public void delete(String sno);
+    Student find(String sno);
 
-	public void update(Student student);
+    void delete(String sno);
 
-	public void save(Student student);
+    void update(Student student);
+
+    void save(Student student);
 }

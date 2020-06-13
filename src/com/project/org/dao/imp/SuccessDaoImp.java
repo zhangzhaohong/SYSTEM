@@ -4,9 +4,9 @@ import com.project.org.dao.BaseDAO;
 import com.project.org.dao.SuccessDao;
 import com.project.org.model.Success;
 import com.project.org.model.SuccessId;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class SuccessDaoImp extends BaseDAO implements SuccessDao {
         successId.setCno(cno);
         Session session = getSession();
         Transaction ts = session.beginTransaction();
-        return (Success) session.get(Success.class, successId);
+        return session.get(Success.class, successId);
     }
 
     public void saveorupdateSuccess(Success success) {

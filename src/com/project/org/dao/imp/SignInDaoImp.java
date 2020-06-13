@@ -3,8 +3,8 @@ package com.project.org.dao.imp;
 import com.project.org.dao.BaseDAO;
 import com.project.org.dao.SignInDao;
 import com.project.org.model.SignIn;
-import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.query.Query;
 
 import java.util.Iterator;
 import java.util.List;

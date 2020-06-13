@@ -1,24 +1,20 @@
 package com.project.pro.servlet;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.util.Iterator;
-import java.util.List;
+import com.project.LogUtil;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.project.LogUtil;
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.FileUploadException;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Servlet implementation class UploadPhotoServlet
@@ -82,7 +78,7 @@ public class UploadPhotoServlet extends HttpServlet {
             } else {
                 System.out.println(item.getFieldName());//heroName
                 String value = item.getString();
-                value = new String(value.getBytes("ISO-8859-1"), "UTF-8");
+                value = new String(value.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
                 System.out.println(value);   //桑葚
             }
         }

@@ -149,16 +149,16 @@ public class StudentAction extends ActionSupport {
         return photoFile;
     }
 
+    public void setPhotoFile(File photoFile) {
+        this.photoFile = photoFile;
+    }
+
     public MajorService getMajorService() {
         return majorService;
     }
 
     public void setMajorService(MajorService majorService) {
         this.majorService = majorService;
-    }
-
-    public void setPhotoFile(File photoFile) {
-        this.photoFile = photoFile;
     }
 
     public List getList() {

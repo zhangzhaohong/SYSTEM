@@ -45,6 +45,59 @@
             <result name="success">/modify_user_info.jsp</result>
             <result name="main" type="dispatcher">/main.jsp</result>
         </action>
+        <!-- ===============================用户登录================================ -->
+        <action name="login" class="signIn">
+            <result name="success">welcome.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <!-- 显示所有学生信息 -->
+        <action name="studentInfo" class="student">
+            <result name="success">xsInfo.jsp</result>
+        </action>
+        <!-- 查看某学生详细信息 -->
+        <action name="findstudent" class="student" method="findstudent">
+            <result name="success">moretail.jsp</result>
+        </action>
+        <action name="getImage" class="student" method="getImage"/>
+        <!-- 删除某学生信息 -->
+        <action name="deletestudent" class="student" method="deletestudent">
+            <result name="success">success.jsp</result>
+        </action>
+        <!-- 修改某学生信息 -->
+        <action name="updatestudentView" class="student" method="updatestudentView">
+            <result name="success">updateXsView.jsp</result>
+        </action>
+        <action name="updatestudent" class="student" method="updatestudent">
+            <result name="success">success.jsp</result>
+        </action>
+        <!-- 录入学生信息 -->
+        <action name="addstudentView" class="student" method="addstudentView">
+            <result name="success">addXsInfo.jsp</result>
+        </action>
+        <action name="addstudent" class="student" method="addstudent">
+            <result name="success">success.jsp</result>
+            <result name="error">existXs.jsp</result>
+        </action>
+        <!-- 录入学生成绩 -->
+        <action name="addschoolView" class="success">
+            <result name="success">addCj.jsp</result>
+        </action>
+        <action name="addorupdateschool" class="success" method="addorupdateschool">
+            <result name="success">success.jsp</result>
+        </action>
+        <!-- 显示所有学生成绩 -->
+        <action name="schoolInfo" class="success" method="schoolInfo">
+            <result name="success">xscjInfo.jsp</result>
+        </action>
+        <!-- 查看某个学生的成绩表 -->
+        <action name="findschool" class="success" method="findschool">
+            <result name="success">oneXscj.jsp</result>
+            <result name="error">noXscj.jsp</result>
+        </action>
+        <!-- 删除学生成绩 -->
+        <action name="deleteOneschool" class="success" method="deleteOneschool">
+            <result name="success">success.jsp</result>
+        </action>
     </package>
     <constant name="struts.i18n.encoding" value="GB2312"/>
 </struts>

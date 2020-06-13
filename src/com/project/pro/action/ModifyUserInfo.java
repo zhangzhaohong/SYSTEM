@@ -14,14 +14,16 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 2018128338 张兆泓
- * **/
+ **/
 public class ModifyUserInfo extends ActionSupport {
 
     ApplicationContext ac;
     private UserInfo userinfo;
+
     public UserInfo getUserinfo() {
         return userinfo;
     }
+
     public void setUserinfo(UserInfo userinfo) {
         this.userinfo = userinfo;
     }

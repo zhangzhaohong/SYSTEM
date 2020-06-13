@@ -1,64 +1,97 @@
 @CHARSET "UTF-8";
-*{margin:0}
-table,th,tr,td{
-	text-align: center;
-	vertical-align: center!important;
+* {
+    margin: 0
 }
-caption{
-	background-image: url(../images/oper_title_bar_bg.gif);
-	background-size:100% 100%;
-	background-repeat:no-repeat;
-	text-align: center;
+
+table, th, tr, td {
+    text-align: center;
+    vertical-align: center !important;
+}
+
+caption {
+    background-image: url(../images/oper_title_bar_bg.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
     caption-side: top;
-    font-size:18px;
-    font-weight:900;
-    height:40px;
-    color:white;
-    padding:8px;  
+    font-size: 18px;
+    font-weight: 900;
+    height: 40px;
+    color: white;
+    padding: 8px;
 }
+
 .nav-menu:hover,
 .nav-liuyan:hover,
 .nav-page:hover,
-.nav-search:hover{
-	background-color: rgba(255, 255, 255, 1)!important;
+.nav-search:hover {
+    background-color: rgba(255, 255, 255, 1) !important;
 }
 
-.nav-menu{
-	background-image: url(../images/oper_title_bar_bg2.gif);
-	background-size:100% 100%;	
+.nav-menu {
+    background-image: url(../images/oper_title_bar_bg2.gif);
+    background-size: 100% 100%;
 }
-.nav-menu th{
-	color:#007bff;
-	font-weight:900!important;
-	font-size:18px;
+
+.nav-menu th {
+    color: #007bff;
+    font-weight: 900 !important;
+    font-size: 18px;
 }
-.nav-liuyan td{
-	padding:10px;
-	
+
+.nav-liuyan td {
+    padding: 10px;
+
 }
-.nav-page ul{
-	margin:0
+
+.nav-page ul {
+    margin: 0
 }
-.nav-search td{
-	padding:0;
-	font-weight:900;
-	color:black;
+
+.nav-search td {
+    padding: 0;
+    font-weight: 900;
+    color: black;
 }
 
 
-    .checkbox-custom {
+.checkbox-custom {
     position: relative;
     padding: 0 15px 0 25px;
     margin-bottom: 7px;
     margin-top: 0;
     display: inline-block;
 }
-<!-- ====================== -->
+
+<!--
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+-->
 /*
 将初始的checkbox的样式改变
 */
 .checkbox-custom input[type="checkbox"] {
-    opacity: 0;/*将初始的checkbox隐藏起来*/
+    opacity: 0; /*将初始的checkbox隐藏起来*/
     position: absolute;
     cursor: pointer;
     z-index: 2;
@@ -70,7 +103,7 @@ caption{
 /*
 点击初始的checkbox，将新的checkbox关联起来
 */
-.checkbox-custom input[type="checkbox"]:checked +label:after {
+.checkbox-custom input[type="checkbox"]:checked + label:after {
     position: absolute;
     display: inline-block;
     font-family: 'Glyphicons Halflings';

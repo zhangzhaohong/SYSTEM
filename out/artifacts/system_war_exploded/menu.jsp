@@ -18,6 +18,7 @@
 <script>
     //当前的菜单
     var currMenu = "${param.type}";
+
     function displayOrHideMenu(objID) {
         displayOrHide("menu_" + objID);
 
@@ -150,12 +151,12 @@
             <table style="width:98%;border:0;border-spacing: 0;padding: 0;">
                 <tr>
                     <td class="menu-icon">&nbsp;</td>
-                    <td class="menu-text"><a href="addStudView.action" target="mainFrame">学生信息录入</a></td>
+                    <td class="menu-text"><a href="addstudentView.action" target="mainFrame">学生信息录入</a></td>
                 </tr>
 
                 <tr>
                     <td class="menu-icon">&nbsp;</td>
-                    <td class="menu-text"><a href="studInfo.action" target="mainFrame">学生信息查询</a></td>
+                    <td class="menu-text"><a href="studentInfo.action" target="mainFrame">学生信息查询</a></td>
                 </tr>
 
 

@@ -5,7 +5,9 @@ import com.project.org.model.Classes;
 import java.util.List;
 
 public interface ClassesDao {
-	public List findAll(int pageNow, int pageSize);
-	public int findClassesSize();
-	public Classes find(String cno);
+    List findAll(int pageNow, int pageSize);
+
+    int findClassesSize();
+
+    Classes find(String cno);
 }

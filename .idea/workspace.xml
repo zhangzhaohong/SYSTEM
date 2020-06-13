@@ -8,36 +8,252 @@
   <component name="ChangeListManager">
     <list default="true" id="481a650c-8dd9-4c4a-bf03-bdca5d572444" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/BaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/BaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/AddLyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/AddLyAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LogoutAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LogoutAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/action/SignInAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/action/SignInAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/action/StudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/action/StudentAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/action/SuccessAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/action/SuccessAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/imp/SignInDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/imp/SignInDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/imp/StudentDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/imp/StudentDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/imp/SuccessDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/dao/imp/SuccessDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Classes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Classes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Classes.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Classes.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Major.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Major.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Major.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Major.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SignIn.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SignIn.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Success.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Success.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Success.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/Success.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SuccessId.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/model/SuccessId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/ClassesServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/ClassesServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/MajorServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/MajorServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/SignInServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/SignInServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/StudentServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/StudentServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/SuccessServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/service/imp/SuccessServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/tool/Pager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/org/tool/Pager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LoginValidateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LoginValidateAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/LyMainAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/ModifyUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/ModifyUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/dao/impl/LyTableDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/dao/impl/LyTableDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/dao/impl/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/dao/impl/UserInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/action/RegUserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/factory/HibernateSessionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/factory/HibernateSessionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/jdbc/SqlSrvDBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/jdbc/SqlSrvDBConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servTest/hello_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servTest/hello_4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/Addly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/Addly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/DealReg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/DealReg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/UploadPhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/UploadPhotoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/Validate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/mainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/servlet/mainServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/LyTable.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/Test.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/Test.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/com/project/pro/vo/UserInfo.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/spring-form.tld" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/spring-form.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/spring.tld" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/spring.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/addCj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/addCj.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/addXsInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/addXsInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/left_ctrl_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/left_ctrl_bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/logo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/menu_tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/menu_tab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/modify_user_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/modify_user_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/oper_area.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/oper_area.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/state_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/state_bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/existXs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/existXs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/foot.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/include/mainTitle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/include/mainTitle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/left_ctrl_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/left_ctrl_bar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/liuyan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/liuyan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/logo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/logo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/menu_tab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/menu_tab.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/modify_user_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/modify_user_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/moretail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/moretail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/noXscj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/noXscj.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/oneXscj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/oneXscj.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/oper_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/oper_info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/dao/BaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/dao/BaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/AddLyAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/AddLyAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LogoutAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LogoutAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/reg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/state_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/state_bar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/updateXsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/updateXsView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/userReg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/userReg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/validate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/validate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/xsInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/xsInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/system_war_exploded/xscjInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/system_war_exploded/xscjInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/action/SignInAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/action/SignInAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/action/StudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/action/StudentAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/action/SuccessAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/action/SuccessAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/dao/imp/SignInDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/dao/imp/SignInDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/dao/imp/StudentDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/dao/imp/StudentDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/dao/imp/SuccessDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/dao/imp/SuccessDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Classes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Classes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Classes.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Classes.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Major.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Major.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Major.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Major.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/SignIn.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/SignIn.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Success.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Success.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/Success.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/Success.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/model/SuccessId.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/model/SuccessId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/ClassesServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/ClassesServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/MajorServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/MajorServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/SignInServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/SignInServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/StudentServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/StudentServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/SuccessServiceManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/service/imp/SuccessServiceManage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/org/tool/Pager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/org/tool/Pager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LoginValidateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LoginValidateAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/LyMainAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/ModifyUserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/ModifyUserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/dao/impl/LyTableDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/dao/impl/LyTableDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/dao/impl/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/dao/impl/UserInfoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/action/RegUserAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/factory/HibernateSessionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/factory/HibernateSessionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/jdbc/SqlSrvDBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/jdbc/SqlSrvDBConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servTest/hello_4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servTest/hello_4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/Addly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/Addly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/DealReg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/DealReg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/UploadPhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/UploadPhotoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/Validate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/mainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/servlet/mainServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/LyTable.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/Test.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/Test.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/com/project/pro/vo/UserInfo.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/system/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/system/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/LogUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/action/SignInAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/action/SignInAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/action/StudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/action/StudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/action/SuccessAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/action/SuccessAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/BaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/AddLyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/AddLyAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/ClassesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/ClassesDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/MajorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/MajorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/SignInDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/SignInDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/SuccessDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/SuccessDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/SignInDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/SignInDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/dao/imp/SuccessDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/dao/imp/SuccessDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Classes.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Classes.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Classes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Major.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Major.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Major.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Major.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/SignIn.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/SignIn.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Success.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Success.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/Success.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/Success.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/model/SuccessId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/model/SuccessId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/ClassesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/ClassesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/MajorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/MajorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/SignInService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/SignInService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/SuccessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/SuccessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/imp/ClassesServiceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/imp/ClassesServiceManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/imp/MajorServiceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/imp/MajorServiceManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/imp/SignInServiceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/imp/SignInServiceManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/imp/StudentServiceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/imp/StudentServiceManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/service/imp/SuccessServiceManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/service/imp/SuccessServiceManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/org/tool/Pager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/org/tool/Pager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LoginValidateAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LogoutAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LogoutAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/LyMainAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/ModifyUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/ModifyUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/action/RegUserAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/ILyTableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/ILyTableDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/IUserInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/IUserInfoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/IUserTableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/IUserTableDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/impl/LyTableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/impl/LyTableDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/dao/impl/UserInfoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/dao/impl/UserInfoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/factory/HibernateSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/factory/HibernateSessionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/jdbc/SqlSrvDBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/jdbc/SqlSrvDBConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servTest/hello_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servTest/hello_4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/service/IUserTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/service/IUserTableService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/project/pro/service/impl/UserTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/service/impl/UserTableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/Addly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/Addly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/CheckUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/CheckUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/DealReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/DealReg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/UploadPhotoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/UploadPhotoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/Validate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/servlet/mainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/servlet/mainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/LyTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/Test.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/Test.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/UserInfo.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/project/pro/vo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/project/pro/vo/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring-form.tld" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring-form.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring.tld" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addCj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addCj.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/addXsInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addXsInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/left_ctrl_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/left_ctrl_bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/logo.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/logo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/menu_tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/menu_tab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/modify_user_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/modify_user_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/oper_area.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/oper_area.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/state_bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/state_bar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/existXs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/existXs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/foot.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/include/mainTitle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/include/mainTitle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/left_ctrl_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/left_ctrl_bar.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/liuyan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/liuyan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/logo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/logo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/menu_tab.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/menu_tab.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/modify_user_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/modify_user_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/moretail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/moretail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/noXscj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/noXscj.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oneXscj.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oneXscj.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/oper_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oper_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/reg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/state_bar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/state_bar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/updateXsView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/updateXsView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userReg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userReg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/validate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/validate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xsInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xsInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/xscjInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/xscjInfo.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +436,7 @@
       <workItem from="1592058936011" duration="5972000" />
       <workItem from="1592065542798" duration="21000" />
       <workItem from="1592065590176" duration="5411000" />
-      <workItem from="1592073875180" duration="96000" />
+      <workItem from="1592073875180" duration="4745000" />
     </task>
     <servers />
   </component>
@@ -261,160 +477,160 @@
       <screen x="0" y="23" width="1920" height="1115" />
     </state>
     <state width="582" height="466" key="DebuggerActiveHint/0.23.1920.1115@0.23.1920.1115" timestamp="1591984070158" />
-    <state width="1471" height="331" key="GridCell.Tab.0.bottom" timestamp="1592072354059">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.0.bottom" timestamp="1592078459626">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.0.bottom/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921058" />
     <state width="1981" height="381" key="GridCell.Tab.0.bottom/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851471" />
     <state width="1471" height="332" key="GridCell.Tab.0.bottom/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510862" />
     <state width="1471" height="332" key="GridCell.Tab.0.bottom/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397759" />
-    <state width="1471" height="332" key="GridCell.Tab.0.bottom/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708271" />
+    <state width="1471" height="272" key="GridCell.Tab.0.bottom/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533303" />
     <state width="1471" height="331" key="GridCell.Tab.0.bottom/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354059" />
-    <state width="1471" height="391" key="GridCell.Tab.0.bottom/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299294" />
-    <state width="1471" height="391" key="GridCell.Tab.0.bottom/0.23.1920.1121@0.23.1920.1121" timestamp="1591989103021" />
+    <state width="1471" height="460" key="GridCell.Tab.0.bottom/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885699" />
+    <state width="1471" height="378" key="GridCell.Tab.0.bottom/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459626" />
     <state width="1471" height="391" key="GridCell.Tab.0.bottom/0.23.1920.1122@0.23.1920.1122" timestamp="1591989174012" />
     <state width="1471" height="388" key="GridCell.Tab.0.bottom/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358006" />
-    <state width="1471" height="331" key="GridCell.Tab.0.center" timestamp="1592072354059">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.0.center" timestamp="1592078459625">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.0.center/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921058" />
     <state width="1981" height="381" key="GridCell.Tab.0.center/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851470" />
     <state width="1471" height="332" key="GridCell.Tab.0.center/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510861" />
     <state width="1471" height="332" key="GridCell.Tab.0.center/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397758" />
-    <state width="1471" height="332" key="GridCell.Tab.0.center/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708270" />
+    <state width="1471" height="272" key="GridCell.Tab.0.center/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533302" />
     <state width="1471" height="331" key="GridCell.Tab.0.center/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354059" />
-    <state width="1471" height="391" key="GridCell.Tab.0.center/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299292" />
-    <state width="1471" height="391" key="GridCell.Tab.0.center/0.23.1920.1121@0.23.1920.1121" timestamp="1591989103019" />
+    <state width="1471" height="460" key="GridCell.Tab.0.center/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885698" />
+    <state width="1471" height="378" key="GridCell.Tab.0.center/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459625" />
     <state width="1471" height="391" key="GridCell.Tab.0.center/0.23.1920.1122@0.23.1920.1122" timestamp="1591989174011" />
     <state width="1471" height="388" key="GridCell.Tab.0.center/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358005" />
-    <state width="1471" height="331" key="GridCell.Tab.0.left" timestamp="1592072354059">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.0.left" timestamp="1592078459625">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.0.left/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921057" />
     <state width="1981" height="381" key="GridCell.Tab.0.left/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851469" />
     <state width="1471" height="332" key="GridCell.Tab.0.left/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510861" />
     <state width="1471" height="332" key="GridCell.Tab.0.left/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397758" />
-    <state width="1471" height="332" key="GridCell.Tab.0.left/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708269" />
+    <state width="1471" height="272" key="GridCell.Tab.0.left/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533302" />
     <state width="1471" height="331" key="GridCell.Tab.0.left/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354059" />
-    <state width="1471" height="391" key="GridCell.Tab.0.left/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299291" />
-    <state width="1471" height="391" key="GridCell.Tab.0.left/0.23.1920.1121@0.23.1920.1121" timestamp="1591989103018" />
+    <state width="1471" height="460" key="GridCell.Tab.0.left/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885697" />
+    <state width="1471" height="378" key="GridCell.Tab.0.left/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459625" />
     <state width="1471" height="391" key="GridCell.Tab.0.left/0.23.1920.1122@0.23.1920.1122" timestamp="1591989174011" />
     <state width="1471" height="388" key="GridCell.Tab.0.left/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358005" />
-    <state width="1471" height="331" key="GridCell.Tab.0.right" timestamp="1592072354059">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.0.right" timestamp="1592078459626">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.0.right/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921058" />
     <state width="1981" height="381" key="GridCell.Tab.0.right/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851471" />
     <state width="1471" height="332" key="GridCell.Tab.0.right/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510862" />
     <state width="1471" height="332" key="GridCell.Tab.0.right/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397759" />
-    <state width="1471" height="332" key="GridCell.Tab.0.right/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708270" />
+    <state width="1471" height="272" key="GridCell.Tab.0.right/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533303" />
     <state width="1471" height="331" key="GridCell.Tab.0.right/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354059" />
-    <state width="1471" height="391" key="GridCell.Tab.0.right/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299293" />
-    <state width="1471" height="391" key="GridCell.Tab.0.right/0.23.1920.1121@0.23.1920.1121" timestamp="1591989103020" />
+    <state width="1471" height="460" key="GridCell.Tab.0.right/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885698" />
+    <state width="1471" height="378" key="GridCell.Tab.0.right/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459626" />
     <state width="1471" height="391" key="GridCell.Tab.0.right/0.23.1920.1122@0.23.1920.1122" timestamp="1591989174012" />
     <state width="1471" height="388" key="GridCell.Tab.0.right/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358006" />
-    <state width="1471" height="331" key="GridCell.Tab.1.bottom" timestamp="1592072354061">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.1.bottom" timestamp="1592078459516">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.1.bottom/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921061" />
     <state width="1981" height="381" key="GridCell.Tab.1.bottom/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851473" />
     <state width="1471" height="332" key="GridCell.Tab.1.bottom/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.1.bottom/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397761" />
-    <state width="1471" height="332" key="GridCell.Tab.1.bottom/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708061" />
+    <state width="1471" height="272" key="GridCell.Tab.1.bottom/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533163" />
     <state width="1471" height="331" key="GridCell.Tab.1.bottom/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354061" />
-    <state width="1471" height="391" key="GridCell.Tab.1.bottom/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299091" />
-    <state width="1471" height="391" key="GridCell.Tab.1.bottom/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102781" />
+    <state width="1471" height="460" key="GridCell.Tab.1.bottom/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885454" />
+    <state width="1471" height="378" key="GridCell.Tab.1.bottom/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459516" />
     <state width="1471" height="391" key="GridCell.Tab.1.bottom/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173776" />
     <state width="1471" height="388" key="GridCell.Tab.1.bottom/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358007" />
-    <state width="1471" height="331" key="GridCell.Tab.1.center" timestamp="1592072354060">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.1.center" timestamp="1592078459515">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.1.center/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921061" />
     <state width="1981" height="381" key="GridCell.Tab.1.center/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851472" />
     <state width="1471" height="332" key="GridCell.Tab.1.center/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.1.center/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397761" />
-    <state width="1471" height="332" key="GridCell.Tab.1.center/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708060" />
+    <state width="1471" height="272" key="GridCell.Tab.1.center/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533163" />
     <state width="1471" height="331" key="GridCell.Tab.1.center/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354060" />
-    <state width="1471" height="391" key="GridCell.Tab.1.center/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299091" />
-    <state width="1471" height="391" key="GridCell.Tab.1.center/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102781" />
+    <state width="1471" height="460" key="GridCell.Tab.1.center/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885453" />
+    <state width="1471" height="378" key="GridCell.Tab.1.center/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459515" />
     <state width="1471" height="391" key="GridCell.Tab.1.center/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173775" />
     <state width="1471" height="388" key="GridCell.Tab.1.center/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358007" />
-    <state width="1471" height="331" key="GridCell.Tab.1.left" timestamp="1592072354060">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.1.left" timestamp="1592078459515">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.1.left/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921061" />
     <state width="1981" height="381" key="GridCell.Tab.1.left/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851472" />
     <state width="1471" height="332" key="GridCell.Tab.1.left/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510862" />
     <state width="1471" height="332" key="GridCell.Tab.1.left/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397760" />
-    <state width="1471" height="332" key="GridCell.Tab.1.left/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708060" />
+    <state width="1471" height="272" key="GridCell.Tab.1.left/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533162" />
     <state width="1471" height="331" key="GridCell.Tab.1.left/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354060" />
-    <state width="1471" height="391" key="GridCell.Tab.1.left/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299090" />
-    <state width="1471" height="391" key="GridCell.Tab.1.left/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102781" />
+    <state width="1471" height="460" key="GridCell.Tab.1.left/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885453" />
+    <state width="1471" height="378" key="GridCell.Tab.1.left/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459515" />
     <state width="1471" height="391" key="GridCell.Tab.1.left/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173775" />
     <state width="1471" height="388" key="GridCell.Tab.1.left/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358006" />
-    <state width="1471" height="331" key="GridCell.Tab.1.right" timestamp="1592072354061">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.1.right" timestamp="1592078459516">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.1.right/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921061" />
     <state width="1981" height="381" key="GridCell.Tab.1.right/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851473" />
     <state width="1471" height="332" key="GridCell.Tab.1.right/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.1.right/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397761" />
-    <state width="1471" height="332" key="GridCell.Tab.1.right/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708061" />
+    <state width="1471" height="272" key="GridCell.Tab.1.right/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533163" />
     <state width="1471" height="331" key="GridCell.Tab.1.right/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354061" />
-    <state width="1471" height="391" key="GridCell.Tab.1.right/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299091" />
-    <state width="1471" height="391" key="GridCell.Tab.1.right/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102781" />
+    <state width="1471" height="460" key="GridCell.Tab.1.right/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885454" />
+    <state width="1471" height="378" key="GridCell.Tab.1.right/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459516" />
     <state width="1471" height="391" key="GridCell.Tab.1.right/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173775" />
     <state width="1471" height="388" key="GridCell.Tab.1.right/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358007" />
-    <state width="1471" height="331" key="GridCell.Tab.2.bottom" timestamp="1592072354060">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.2.bottom" timestamp="1592078459515">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.2.bottom/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921060" />
     <state width="1981" height="381" key="GridCell.Tab.2.bottom/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851472" />
     <state width="1471" height="332" key="GridCell.Tab.2.bottom/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.2.bottom/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397760" />
-    <state width="1471" height="332" key="GridCell.Tab.2.bottom/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708060" />
+    <state width="1471" height="272" key="GridCell.Tab.2.bottom/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533162" />
     <state width="1471" height="331" key="GridCell.Tab.2.bottom/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354060" />
-    <state width="1471" height="391" key="GridCell.Tab.2.bottom/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299092" />
-    <state width="1471" height="391" key="GridCell.Tab.2.bottom/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102780" />
+    <state width="1471" height="460" key="GridCell.Tab.2.bottom/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885453" />
+    <state width="1471" height="378" key="GridCell.Tab.2.bottom/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459515" />
     <state width="1471" height="391" key="GridCell.Tab.2.bottom/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173775" />
     <state width="1471" height="388" key="GridCell.Tab.2.bottom/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358009" />
-    <state width="1471" height="331" key="GridCell.Tab.2.center" timestamp="1592072354060">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.2.center" timestamp="1592078459514">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.2.center/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921059" />
     <state width="1981" height="381" key="GridCell.Tab.2.center/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851471" />
     <state width="1471" height="332" key="GridCell.Tab.2.center/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.2.center/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397760" />
-    <state width="1471" height="332" key="GridCell.Tab.2.center/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708059" />
+    <state width="1471" height="272" key="GridCell.Tab.2.center/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533161" />
     <state width="1471" height="331" key="GridCell.Tab.2.center/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354060" />
-    <state width="1471" height="391" key="GridCell.Tab.2.center/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299091" />
-    <state width="1471" height="391" key="GridCell.Tab.2.center/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102780" />
+    <state width="1471" height="460" key="GridCell.Tab.2.center/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885453" />
+    <state width="1471" height="378" key="GridCell.Tab.2.center/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459514" />
     <state width="1471" height="391" key="GridCell.Tab.2.center/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173774" />
     <state width="1471" height="388" key="GridCell.Tab.2.center/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358008" />
-    <state width="1471" height="331" key="GridCell.Tab.2.left" timestamp="1592072354060">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.2.left" timestamp="1592078459514">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.2.left/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921059" />
     <state width="1981" height="381" key="GridCell.Tab.2.left/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851471" />
     <state width="1471" height="332" key="GridCell.Tab.2.left/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.2.left/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397759" />
-    <state width="1471" height="332" key="GridCell.Tab.2.left/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708058" />
+    <state width="1471" height="272" key="GridCell.Tab.2.left/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533161" />
     <state width="1471" height="331" key="GridCell.Tab.2.left/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354060" />
-    <state width="1471" height="391" key="GridCell.Tab.2.left/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299091" />
-    <state width="1471" height="391" key="GridCell.Tab.2.left/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102779" />
+    <state width="1471" height="460" key="GridCell.Tab.2.left/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885452" />
+    <state width="1471" height="378" key="GridCell.Tab.2.left/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459514" />
     <state width="1471" height="391" key="GridCell.Tab.2.left/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173773" />
     <state width="1471" height="388" key="GridCell.Tab.2.left/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358008" />
-    <state width="1471" height="331" key="GridCell.Tab.2.right" timestamp="1592072354060">
-      <screen x="0" y="23" width="1920" height="1116" />
+    <state width="1471" height="378" key="GridCell.Tab.2.right" timestamp="1592078459515">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state width="1981" height="354" key="GridCell.Tab.2.right/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592050921060" />
     <state width="1981" height="381" key="GridCell.Tab.2.right/0.23.1680.967/-2560.126.2560.1417@-2560.126.2560.1417" timestamp="1592026851472" />
     <state width="1471" height="332" key="GridCell.Tab.2.right/0.23.1920.1109@0.23.1920.1109" timestamp="1592065510863" />
     <state width="1471" height="332" key="GridCell.Tab.2.right/0.23.1920.1114@0.23.1920.1114" timestamp="1592069397760" />
-    <state width="1471" height="332" key="GridCell.Tab.2.right/0.23.1920.1115@0.23.1920.1115" timestamp="1592066708059" />
+    <state width="1471" height="272" key="GridCell.Tab.2.right/0.23.1920.1115@0.23.1920.1115" timestamp="1592075533162" />
     <state width="1471" height="331" key="GridCell.Tab.2.right/0.23.1920.1116@0.23.1920.1116" timestamp="1592072354060" />
-    <state width="1471" height="391" key="GridCell.Tab.2.right/0.23.1920.1117@0.23.1920.1117" timestamp="1591990299092" />
-    <state width="1471" height="391" key="GridCell.Tab.2.right/0.23.1920.1121@0.23.1920.1121" timestamp="1591989102780" />
+    <state width="1471" height="460" key="GridCell.Tab.2.right/0.23.1920.1117@0.23.1920.1117" timestamp="1592076885453" />
+    <state width="1471" height="378" key="GridCell.Tab.2.right/0.23.1920.1121@0.23.1920.1121" timestamp="1592078459515" />
     <state width="1471" height="391" key="GridCell.Tab.2.right/0.23.1920.1122@0.23.1920.1122" timestamp="1591989173774" />
     <state width="1471" height="388" key="GridCell.Tab.2.right/0.23.1920.1123@0.23.1920.1123" timestamp="1591987358008" />
     <state width="1981" height="354" key="GridCell.Tab.3.bottom" timestamp="1592049193044">
@@ -470,22 +686,23 @@
       <screen x="0" y="23" width="1920" height="1109" />
     </state>
     <state x="747" y="362" key="chooseDestDirectoryDialog/0.23.1920.1109@0.23.1920.1109" timestamp="1592065554032" />
-    <state x="661" y="214" width="599" height="729" key="find.popup" timestamp="1592073969092">
-      <screen x="0" y="23" width="1920" height="1115" />
+    <state x="661" y="215" width="598" height="733" key="find.popup" timestamp="1592077385963">
+      <screen x="0" y="23" width="1920" height="1121" />
     </state>
     <state x="-1679" y="357" width="798" height="883" key="find.popup/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592048756741" />
     <state x="578" y="199" width="568" height="673" key="find.popup/0.23.1680.1027/-2560.126.2560.1349@0.23.1680.1027" timestamp="1592030507296" />
     <state x="661" y="213" width="599" height="726" key="find.popup/0.23.1920.1109@0.23.1920.1109" timestamp="1592063542819" />
     <state x="661" y="213" width="599" height="726" key="find.popup/0.23.1920.1111@0.23.1920.1111" timestamp="1592065073935" />
     <state x="661" y="214" width="599" height="728" key="find.popup/0.23.1920.1114@0.23.1920.1114" timestamp="1592067240676" />
-    <state x="661" y="214" width="599" height="729" key="find.popup/0.23.1920.1115@0.23.1920.1115" timestamp="1592073969092" />
+    <state x="661" y="214" width="599" height="729" key="find.popup/0.23.1920.1115@0.23.1920.1115" timestamp="1592074749525" />
     <state x="661" y="214" width="598" height="729" key="find.popup/0.23.1920.1116@0.23.1920.1116" timestamp="1591980934835" />
-    <state x="661" y="215" width="598" height="733" key="find.popup/0.23.1920.1121@0.23.1920.1121" timestamp="1591989719237" />
-    <state x="626" y="271" width="671" height="670" key="search.everywhere.popup" timestamp="1592065442230">
-      <screen x="0" y="23" width="1920" height="1109" />
+    <state x="661" y="215" width="598" height="733" key="find.popup/0.23.1920.1121@0.23.1920.1121" timestamp="1592077385963" />
+    <state x="626" y="272" width="671" height="674" key="search.everywhere.popup" timestamp="1592075102900">
+      <screen x="0" y="23" width="1920" height="1115" />
     </state>
     <state x="-1725" y="428" width="894" height="814" key="search.everywhere.popup/0.23.1680.1027/-2560.126.2560.1349@-2560.126.2560.1349" timestamp="1592043664329" />
     <state x="626" y="271" width="671" height="670" key="search.everywhere.popup/0.23.1920.1109@0.23.1920.1109" timestamp="1592065442230" />
+    <state x="626" y="272" width="671" height="674" key="search.everywhere.popup/0.23.1920.1115@0.23.1920.1115" timestamp="1592075102900" />
     <state x="626" y="273" width="670" height="674" key="search.everywhere.popup/0.23.1920.1117@0.23.1920.1117" timestamp="1591990135669" />
     <state x="626" y="274" width="670" height="676" key="search.everywhere.popup/0.23.1920.1121@0.23.1920.1121" timestamp="1591989421269" />
   </component>
