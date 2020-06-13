@@ -8,17 +8,17 @@ import com.project.pro.vo.UserInfo;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.ContextLoader;
 
 import javax.servlet.http.HttpServletRequest;
 
 public class ModifyUserInfo extends ActionSupport {
 
+    ApplicationContext ac;
     private UserInfo userinfo;
-
     public UserInfo getUserinfo() {
         return userinfo;
     }
-
     public void setUserinfo(UserInfo userinfo) {
         this.userinfo = userinfo;
     }
@@ -27,12 +27,11 @@ public class ModifyUserInfo extends ActionSupport {
      * @return
      */
     public String execute() {
-
         HttpServletRequest request = ServletActionContext.getRequest();
         String uid = request.getParameter("UID");
-
-        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-
+        ac = ContextLoader.getCurrentWebApplicationContext();
+        if (ac == null) ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
         IUserInfoDAO userInfoDao = (IUserInfoDAO) ac.getBean("userInfoDAO");    //new UserInfoDAO();
 
         String method = request.getMethod();

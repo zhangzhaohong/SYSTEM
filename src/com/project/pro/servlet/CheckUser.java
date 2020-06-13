@@ -3,6 +3,7 @@ package com.project.pro.servlet;
 import com.project.pro.dao.IUserTableDAO;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.web.context.ContextLoader;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,6 +16,8 @@ import java.io.PrintWriter;
 @WebServlet(name="checkUser",urlPatterns={"/CheckUser"})
 public class CheckUser extends HttpServlet{
 
+	ApplicationContext ac;
+
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
@@ -23,7 +26,9 @@ public class CheckUser extends HttpServlet{
 		String username = request.getParameter("username");
 		//设置响应内容
 		String responseContext = "true";
-		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ac = ContextLoader.getCurrentWebApplicationContext();
+		if (ac == null) ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		IUserTableDAO userDao = (IUserTableDAO)ac.getBean("userTableDAO");
 		boolean isExist = userDao.isExistUser(username);
 		if (isExist) {

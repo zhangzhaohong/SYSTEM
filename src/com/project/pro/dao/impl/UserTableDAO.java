@@ -39,7 +39,7 @@ public class UserTableDAO extends BaseDAO implements IUserTableDAO {
         Session session = getSession();
         session.clear();
         Transaction ts = session.beginTransaction();
-        int sucNum = (Integer) session.save(session.merge(user));
+        int sucNum = (Integer) session.save(user);
         ts.commit();
         closeSession(session);
         return sucNum;

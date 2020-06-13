@@ -157,6 +157,10 @@ function prev_page(){
 		first_page();
 		return;
 	}
+	if (parseInt(pn) <= 1){
+		first_page();
+		return;
+	}
 	var nextPage = parseInt(pn) - 1;
 	if(nextPage < 1){
 		nextPage = 1;
