@@ -38,7 +38,7 @@
         <th>操作</th>
         <th>操作</th>
     </tr>
-    <s:iterator value="#request.list">
+    <s:iterator value="#request.list" var="student">
         <tr style="color: rgb(15,25,255);text-align: center;">
             <td><s:property value="#student.sno"/></td>
             <td><s:property value="#student.sname"/></td>

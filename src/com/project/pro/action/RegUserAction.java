@@ -105,6 +105,11 @@ public class RegUserAction extends ActionSupport {
 
         IUserTableDAO userDao = (IUserTableDAO) ac.getBean("userTableDAO");        //new UserTableDAO();
 
+        if (userDao.isExistUser(user.getUsername())){
+            nameregErr = "用户已经存在";
+            return INPUT;
+        }
+
         int num = userDao.saveUser(user);
 
         if (num > 0) {

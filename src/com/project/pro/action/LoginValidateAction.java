@@ -4,10 +4,12 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.project.pro.service.IUserTableService;
 import com.project.pro.vo.Test;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.context.ContextLoader;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
@@ -145,6 +147,11 @@ public class LoginValidateAction extends ActionSupport {
         if (validated) {
             return "success";
         } else {
+            HttpServletRequest request = ServletActionContext.getRequest();
+            request.setAttribute("action", "登录");
+            request.setAttribute("oper_info", "登录失败");
+            request.setAttribute("next_info", "登录页面");
+            request.setAttribute("next_url", "login.jsp");
             return "error";
         }
     }

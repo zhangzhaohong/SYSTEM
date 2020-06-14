@@ -49,8 +49,8 @@ public class StudentDaoImp extends BaseDAO implements StudentDao {
         try {
             session.clear();
             Transaction ts = session.beginTransaction();
-            Query query = session.createQuery("from Student where sno=?");
-            query.setParameter(0, sno);
+            Query query = session.createQuery("from Student where sno=?1");
+            query.setParameter(1, sno);
             query.setMaxResults(1);
             student = (Student) query.uniqueResult();
             ts.commit();

@@ -56,7 +56,7 @@
         </action>
         <!-- 查看某学生详细信息 -->
         <action name="findstudent" class="student" method="findstudent">
-            <result name="success">moretail.jsp</result>
+            <result name="success">moredetail.jsp</result>
         </action>
         <action name="getImage" class="student" method="getImage"/>
         <!-- 删除某学生信息 -->

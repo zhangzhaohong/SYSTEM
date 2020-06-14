@@ -16,8 +16,8 @@ public class MajorDaoImp extends BaseDAO implements MajorDao {
         try {
             session.clear();
             Transaction ts = session.beginTransaction();
-            Query query = session.createQuery("from Major where id=?");
-            query.setParameter(0, majorid);
+            Query query = session.createQuery("from Major where id=?1");
+            query.setParameter(1, majorid);
             query.setMaxResults(1);
             result = (Major) query.uniqueResult();
         } catch (Exception e) {

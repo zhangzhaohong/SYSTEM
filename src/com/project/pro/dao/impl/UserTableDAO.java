@@ -56,5 +56,8 @@ public class UserTableDAO extends BaseDAO implements IUserTableDAO {
         closeSession(session);
         return users.size() > 0;
     }
+    /**
+     * zhangzhaohong 2018128338
+     * */
 
 }

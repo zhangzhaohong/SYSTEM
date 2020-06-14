@@ -25,8 +25,7 @@
         </td>
     </tr>
     <tr>
-        <s:select name="student.major.id" list="#{'0001':'计算机','0002':'网络','0003':'WEB','0004':'其他'}" headerKey="0"
-                  headerValue="--请选择专业--" label="专业"></s:select>
+        <s:select name="student.major.id" list="list" listKey="id" listValue="majorName" headerKey="0" headerValue="--请选择专业--" label="专业"></s:select>
     </tr>
     <tr>
         <s:textfield name="student.birthday" label="出生时间" value=""></s:textfield>
