@@ -1,54 +1,56 @@
-<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="gb2312" %>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body style="background-color: rgb(239,246,254);">
-<h3>ËØ∑Â°´ÂÜôÂ≠¶Áîü‰ø°ÊÅØ</h3>
+<h3>«ÎÃÓ–¥—ß…˙–≈œ¢</h3>
 <hr width="700" align="left">
 <s:form action="addstudent" method="post" enctype="multipart/form-data">
 <table border="0" cellspacing="0" cellpadding="1">
     <tr>
         <td>
-            <s:textfield name="student.sno" label="Â≠¶Âè∑" value=""></s:textfield>
+            <s:textfield name="student.sno" label="—ß∫≈" value=""></s:textfield>
         </td>
     </tr>
     <tr>
         <td>
-            <s:textfield name="student.sname" label="ÂßìÂêç" value=""></s:textfield>
+            <s:textfield name="student.sname" label="–’√˚" value=""></s:textfield>
         </td>
     </tr>
     <tr>
         <td>
-            <s:radio name="student.sex" value="1" list="#{1:'Áî∑',0:'Â•≥'}" label="ÊÄßÂà´"/>
+            <s:radio name="student.sex" value="1" list="#{1:'ƒ–',0:'≈Æ'}" label="–‘±"/>
         </td>
     </tr>
     <tr>
-        <s:select name="student.major.id" list="list" listKey="id" listValue="majorName" headerKey="0" headerValue="--ËØ∑ÈÄâÊã©‰∏ì‰∏ö--" label="‰∏ì‰∏ö"></s:select>
+        <%--<s:select name="student.major.id" list="list" listKey="id" listValue="majorName" headerKey="0" headerValue="--«Î—°‘Ò◊®“µ--" label="◊®“µ"></s:select>--%>
+        <s:select name="student.major.id" list="#{'0001':'º∆À„ª˙','0002':'Õ¯¬Á','0003':'WEB','0004':'∆‰À˚'}" headerKey="0"
+                  headerValue="--«Î—°‘Ò◊®“µ--" label="◊®“µ"></s:select>
     </tr>
     <tr>
-        <s:textfield name="student.birthday" label="Âá∫ÁîüÊó∂Èó¥" value=""></s:textfield>
-    </tr>
-    <tr>
-        <td>
-            <s:textfield name="student.totalCredits" label="ÊÄªÂ≠¶ÂàÜ" value=""></s:textfield>
-        </td>
+        <s:textfield name="student.birthday" label="≥ˆ…˙ ±º‰" value=""></s:textfield>
     </tr>
     <tr>
         <td>
-            <s:textfield name="student.remarks" label="Â§áÊ≥®" value=""></s:textfield>
+            <s:textfield name="student.totalCredits" label="◊‹—ß∑÷" value=""></s:textfield>
         </td>
     </tr>
     <tr>
         <td>
-            <s:file name="photoFile" label="ÁÖßÁâá" value=""></s:file>
+            <s:textfield name="student.remarks" label="±∏◊¢" value=""></s:textfield>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <s:file name="photoFile" label="’’∆¨" value=""></s:file>
         </td>
     </tr>
 </table>
 <p>
-    <input type="submit" value="Ê∑ªÂä†"/>
-    <input type="reset" value="ÈáçÁΩÆ"/>
+    <input type="submit" value="ÃÌº”"/>
+    <input type="reset" value="÷ÿ÷√"/>
     </s:form>
 </body>
 </html>
