@@ -11,7 +11,7 @@
         <th>学分</th>
         <th>删除</th>
     </tr>
-    <s:iterator value="#request.list" id="xscj">
+    <s:iterator value="#request.list" var="xscj">
         <tr>
             <td>
                 <a href="findschool.action?success.id.sno=<s:property value="#xscj[0]"/>">
