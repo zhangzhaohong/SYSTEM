@@ -18,6 +18,7 @@
           <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
           <element id="library" level="project" name="spring-web-5.2.7.RELEASE" />
           <element id="library" level="project" name="commons" />
+          <element id="library" level="project" name="spring-webmvc-5.2.7.RELEASE" />
         </element>
       </element>
     </root>

@@ -10,4 +10,5 @@ public interface IUserTableDAO {
 
     boolean isExistUser(String username);
 
+    Test checkLogin(String username, String userpwd, String usertype);
 }

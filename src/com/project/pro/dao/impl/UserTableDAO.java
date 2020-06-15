@@ -59,5 +59,9 @@ public class UserTableDAO extends BaseDAO implements IUserTableDAO {
     /**
      * zhangzhaohong 2018128338
      * */
+    @Override
+    public Test checkLogin(String username, String userpwd, String usertype) {
+        return validatTest(username, userpwd, usertype);
+    }
 
 }

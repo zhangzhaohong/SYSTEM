@@ -66,5 +66,6 @@
     <orderEntry type="library" name="Spring-5.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="spring-web-5.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="commons" level="project" />
+    <orderEntry type="library" name="spring-webmvc-5.2.7.RELEASE" level="project" />
   </component>
 </module>
