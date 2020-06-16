@@ -4,6 +4,7 @@ import com.project.LogUtil;
 import com.project.pro.factory.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 /**
  * 2018128338 张兆泓
@@ -21,7 +22,16 @@ public class BaseDAO {
     }
 
     public Session getSession() {
-        return sessionFactory.openSession();
+        Session session = null;
+        try {
+            session = sessionFactory.openSession();
+        } catch (Exception e){
+            Configuration configure = new Configuration().configure();
+            sessionFactory  = configure.buildSessionFactory();
+            setSessionFactory(sessionFactory);
+            session = sessionFactory.openSession();
+        }
+        return session;
     }
 
     public void closeSession() {

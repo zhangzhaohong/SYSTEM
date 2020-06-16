@@ -1,70 +1,64 @@
-<%@ page language="java" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="gb2312" %>
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <html>
 <head></head>
 <body style="background-color: rgb(239,246,254);">
-<s:set var="xs" value="#request.xsInfo"></s:set>
-<s:form action="updateXs" method="post" enctype="multipart/form-data">
+<s:set var="student" value="#request.studentInfo"></s:set>
+<s:form action="updatestudent" method="post" enctype="multipart/form-data">
     <table border="0" cellspacing="1" cellpadding="8" width="500">
         <tr>
-            <td width="80">Â≠¶Âè∑Ôºö</td>
+            <td width="80">—ß∫≈£∫</td>
             <td>
                 <input type="text" name="student.sno" value="<s:property value="#student.sno"/>" readonly/>
             </td>
         </tr>
         <tr>
-            <td width="80">ÂßìÂêçÔºö</td>
+            <td width="80">–’√˚£∫</td>
             <td>
                 <input type="text" name="student.sname" value="<s:property value="#student.sname"/>"/>
             </td>
         </tr>
         <tr>
             <td width="80">
-                <s:radio list="#{1:'Áî∑',0:'Â•≥'}" value="#student.sex" label="ÊÄßÂà´" name="student.sex"></s:radio>
+                <s:radio list="#{1:'ƒ–',0:'≈Æ'}" value="#student.sex" label="–‘±" name="student.sex"></s:radio>
             </td>
         </tr>
         <tr>
-            <td width="80">‰∏ì‰∏öÔºö</td>
             <td>
-                <select name="student.major.id">
-                    <s:iterator value="#request.major" id="major">
-                        <option value="<s:property value="#major.id"/>">
-                            <s:property value="#major.majorName"/>
-                        </option>
-                    </s:iterator>
-                </select>
+                <s:select name="student.major.id" list="#{'0001':'º∆À„ª˙','0002':'Õ¯¬Á','0003':'WEB','0004':'∆‰À˚'}" headerKey="0"
+                          headerValue="--«Î—°‘Ò◊®“µ--" label="◊®“µ"></s:select>
             </td>
         </tr>
         <tr>
-            <td width="80">Âá∫ÁîüÊó∂Èó¥Ôºö</td>
+            <td width="80">≥ˆ…˙ ±º‰£∫</td>
             <td>
                 <input type="text" name="student.birthday" value="<s:property value="#student.birthday"/>"/>
             </td>
         </tr>
         <tr>
-            <td width="80">ÊÄªÂ≠¶ÂàÜÔºö</td>
+            <td width="80">◊‹—ß∑÷£∫</td>
             <td>
                 <input type="text" name="student.totalCredits" value="<s:property value="#student.totalCredits"/>"/>
             </td>
         </tr>
         <tr>
-            <td width="80">Â§áÊ≥®Ôºö</td>
+            <td width="80">±∏◊¢£∫</td>
             <td>
                 <input type="text" name="student.remarks" value="<s:property value="#student.remarks"/>"/>
             </td>
         </tr>
         <tr>
-            <td>ÁÖßÁâá</td>
+            <td>’’∆¨</td>
             <td>
                 <input type="file" name="photoFile"/>
             </td>
         </tr>
     </table>
-    <input type="submit" value="‰øÆÊîπ"/>
-    <!-- ËøîÂõû‰∏ä‰∏ÄÁïåÈù¢ -->
-    <input type="button" value="ËøîÂõû" onclick="history.back();"/>
+    <input type="submit" value="–ﬁ∏ƒ"/>
+    <!-- ∑µªÿ…œ“ªΩÁ√Ê -->
+    <input type="button" value="∑µªÿ" onclick="history.back();"/>
 </s:form>
-<!-- ËøôÈáåÁî® JavaScript Êù•ÂÆûÁé∞Ê†πÊçÆËØ•Â≠¶ÁîüÁöÑ‰∏ì‰∏ö ID Êù•ÊòæÁ§∫‰∏ì‰∏öÂêç -->
+<!-- ’‚¿Ô”√ JavaScript ¿¥ µœ÷∏˘æ›∏√—ß…˙µƒ◊®“µ ID ¿¥œ‘ æ◊®“µ√˚ -->
 <script type="text/javascript">
     document.getElementById("student.major.id").value = '<s:property value="#student.major.id"/>'
 </script>

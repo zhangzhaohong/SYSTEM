@@ -110,13 +110,14 @@ public class StudentAction extends ActionSupport {
         stu.setBirthday(student.getBirthday());
         stu.setTotalCredits(student.getTotalCredits());
         stu.setRemarks(student.getRemarks());
-        stu.setMajor(majorService.getOneZy(student.getMajor().getId()));
-        if (this.getPhotoFile() != null) {
-            FileInputStream fis = new FileInputStream(this.getPhotoFile());
-            byte[] buffer = new byte[fis.available()];
-            fis.read(buffer);
-            stu.setPhoto(buffer);
-        }
+        stu.setMajor(student.getMajor());
+//        stu.setMajor(majorService.getOneZy(student.getMajor().getId()));
+//        if (this.getPhotoFile() != null) {
+//            FileInputStream fis = new FileInputStream(this.getPhotoFile());
+//            byte[] buffer = new byte[fis.available()];
+//            fis.read(buffer);
+//            stu.setPhoto(buffer);
+//        }
         studentService.save(stu);
         return SUCCESS;
     }

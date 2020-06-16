@@ -3,7 +3,9 @@ package com.project.org.dao.imp;
 import com.project.org.dao.BaseDAO;
 import com.project.org.dao.StudentDao;
 import com.project.org.model.Student;
+import com.project.pro.factory.HibernateSessionFactory;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
@@ -49,8 +51,8 @@ public class StudentDaoImp extends BaseDAO implements StudentDao {
         try {
             session.clear();
             Transaction ts = session.beginTransaction();
-            Query query = session.createQuery("from Student where sno=?");
-            query.setParameter(0, sno);
+            Query query = session.createQuery("from Student where sno=?1");
+            query.setParameter(1, sno);
             query.setMaxResults(1);
             student = (Student) query.uniqueResult();
             ts.commit();
@@ -80,7 +82,7 @@ public class StudentDaoImp extends BaseDAO implements StudentDao {
         try {
             session.clear();
             Transaction ts = session.beginTransaction();
-            session.update(student);
+            session.update(session.merge(student));
             ts.commit();
         } catch (Exception e) {
             e.printStackTrace();
